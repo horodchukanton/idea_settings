@@ -80,17 +80,16 @@
       <option name="PERL5_PREFIX" value="true" />
     </context>
   </template>
-  <template name="table" value="my $table = $html-&gt;table( { &#10;                            width      =&gt; '100%',&#10;                            caption    =&gt; _$OBJECT$,&#10;                            border     =&gt; 1,&#10;                            title      =&gt; [$COLUMN_TITLES$],&#10;                            cols_align =&gt; ['left', 'right', 'right', 'right', 'center', 'center' $END$],&#10;                            pages      =&gt; $OBJECT$-&gt;{TOTAL},&#10;                            qs         =&gt; $pages_qs,&#10;                            ID         =&gt; '$COMPANY$_ID'&#10;                          } );&#10;                          &#10;                          " description="ABills::HTML-&gt;table" toReformat="true" toShortenFQNames="true">
-    <variable name="COLUMN_TITLES" expression="" defaultValue="" alwaysStopAt="true" />
+  <template name="table" value="my $table = $html-&gt;table( { &#10;  width      =&gt; '100%',&#10;  caption    =&gt; _$OBJECT$,&#10;  border     =&gt; 1,&#10;  title      =&gt; [$END$],&#10;  pages      =&gt; $OBJECT$-&gt;{TOTAL},&#10;  qs         =&gt; $pages_qs,&#10;  ID         =&gt; '$COMPANY$_ID'&#10;} );" description="ABills::HTML-&gt;table" toReformat="true" toShortenFQNames="true">
     <variable name="OBJECT" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="COMPANY" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="PERL5_PREFIX" value="true" />
     </context>
   </template>
-  <template name="bps" value="_bp(&quot;$DESCRIBE$&quot;, $VALUE$, { EXIT =&gt; 1 });" description="breakpoint stop" toReformat="false" toShortenFQNames="true">
-    <variable name="DESCRIBE" expression="" defaultValue="" alwaysStopAt="true" />
+  <template name="_bps" value="_bp(&quot;$DESCRIBE$&quot;, $VALUE$, { EXIT =&gt; 1 });" description="breakpoint stop" toReformat="false" toShortenFQNames="true">
     <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="DESCRIBE" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="PERL5" value="true" />
       <option name="PERL5_UNFINISHED_IF" value="false" />
@@ -187,7 +186,7 @@
       <option name="PERL5" value="true" />
     </context>
   </template>
-  <template name="bp_d" value="  delete $OBJECT$-&gt;{admin};&#10;  delete $OBJECT$-&gt;{db};&#10;  delete $OBJECT$-&gt;{conf};&#10;  delete $OBJECT$-&gt;{COL_NAMES_ARR};&#10;&#10;  _bp('$OBJECT', $OBJECT$, { EXIT =&gt; $EXIT$ });&#10;  &#10;  $END$" description="show database row" toReformat="false" toShortenFQNames="true">
+  <template name="_bpd" value="  delete $OBJECT$-&gt;{admin};&#10;  delete $OBJECT$-&gt;{db};&#10;  delete $OBJECT$-&gt;{conf};&#10;  delete $OBJECT$-&gt;{COL_NAMES_ARR};&#10;&#10;  _bp('$OBJECT', $OBJECT$, { EXIT =&gt; $EXIT$ });&#10;  &#10;  $END$" description="show database row" toReformat="false" toShortenFQNames="true">
     <variable name="OBJECT" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="EXIT" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
@@ -216,14 +215,14 @@
       <option name="PERL5_UNFINISHED_IF" value="true" />
     </context>
   </template>
-  <template name="caller" value="_bp(&quot;Called by&quot;, join(&quot;, &quot;, caller), {HEADER =&gt; 0, EXIT =&gt; 0, TO_CONSOLE =&gt; 0});" description="Show bp caller" toReformat="false" toShortenFQNames="true">
+  <template name="_bpc" value="_bp(&quot;Called by&quot;, [ caller ], {HEADER =&gt; 0, EXIT =&gt; 0, TO_CONSOLE =&gt; 0});" description="Show bp caller" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="PERL5" value="true" />
     </context>
   </template>
-  <template name="_bp_a" value="_bp(&quot;$DESCRIBE$&quot;, $VALUE$, $BP_ATTR);" description="breakpoint with predefined argument" toReformat="false" toShortenFQNames="true">
-    <variable name="DESCRIBE" expression="" defaultValue="" alwaysStopAt="true" />
+  <template name="_bpa" value="_bp(&quot;$DESCRIBE$&quot;, $VALUE$, $BP_ATTR);" description="breakpoint with predefined argument" toReformat="false" toShortenFQNames="true">
     <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="DESCRIBE" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="PERL5" value="true" />
       <option name="PERL5_UNFINISHED_IF" value="false" />
@@ -242,8 +241,7 @@
       <option name="PERL5_PREFIX" value="true" />
     </context>
   </template>
-  <template name="crudw" value="  my %TEMPLATE_$ENTITY_NAME$ = ();&#10;  my $show_add_form = $FORM{add_form} || 0;&#10;&#10;  if ($FORM{add}) {&#10;    $MODULE_NAME$-&gt;$entity_name$_add({%FORM});&#10;    $show_add_form = !$misc-&gt;_show_result($MODULE_NAME$, $lang{ADDED});&#10;  }&#10;  elsif ($FORM{change}) {&#10;    $MODULE_NAME$-&gt;$entity_name$_change({%FORM});&#10;    $misc-&gt;_show_result($MODULE_NAME$, $lang{CHANGED});&#10;    $show_add_form = 1;&#10;  }&#10;  elsif ($FORM{chg}) {&#10;    my $tp_info = $MODULE_NAME$-&gt;$entity_name$_info($FORM{chg});&#10;    if (!_error_show($MODULE_NAME$)) {&#10;      %TEMPLATE_$ENTITY_NAME$ = %{$tp_info};&#10;      $show_add_form          = 1;&#10;    }&#10;  }&#10;  elsif ($FORM{del}) {&#10;    $MODULE_NAME$-&gt;$entity_name$_del({ ID =&gt; $FORM{del} });&#10;    $misc-&gt;_show_result($MODULE_NAME$, $lang{DELETED});&#10;  }&#10;&#10;  if ($show_add_form) {&#10;    $html-&gt;tpl_show(&#10;      _include('$template_name$', '$MODULE_NAME$'),&#10;      {&#10;        %TEMPLATE_$ENTITY_NAME$,&#10;        SUBMIT_BTN_ACTION =&gt; ($FORM{chg}) ? 'change' : 'add',&#10;        SUBMIT_BTN_NAME   =&gt; ($FORM{chg}) ? $lang{CHANGE} : $lang{ADD},&#10;      }&#10;    );&#10;  }" shortcut="SPACE" description="webinterface template logic" toReformat="false" toShortenFQNames="true">
-    <variable name="ENTITY_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+  <template name="crudw" value="my %TEMPLATE_ARGS = ();&#10;my $show_add_form = $FORM{add_form} || 0;&#10;&#10;if ($FORM{add}) {&#10;  $MODULE_NAME$-&gt;$entity_name$_add({%FORM});&#10;  $show_add_form = show_result($MODULE_NAME$, $lang{ADDED});&#10;}&#10;elsif ($FORM{change}) {&#10;  $MODULE_NAME$-&gt;$entity_name$_change({%FORM});&#10;  show_result($MODULE_NAME$, $lang{CHANGED});&#10;  $show_add_form = 1;&#10;}&#10;elsif ($FORM{chg}) {&#10;  my $tp_info = $MODULE_NAME$-&gt;$entity_name$_info($FORM{chg});&#10;  if (!_error_show($MODULE_NAME$)) {&#10;    %TEMPLATE_ARGS = %{$tp_info};&#10;    $show_add_form = 1;&#10;  }&#10;}&#10;elsif ($FORM{del}) {&#10;  $MODULE_NAME$-&gt;$entity_name$_del({ ID =&gt; $FORM{del} });&#10;  show_result($MODULE_NAME$, $lang{DELETED});&#10;}&#10;&#10;if ($show_add_form) {&#10;  &#10;  &#10;  $html-&gt;tpl_show(&#10;    _include('$template_name$', '$MODULE_NAME$'),&#10;    {&#10;      %TEMPLATE_ARGS,&#10;      %FORM,&#10;      SUBMIT_BTN_ACTION =&gt; ($FORM{chg}) ? 'change' : 'add',&#10;      SUBMIT_BTN_NAME   =&gt; ($FORM{chg}) ? $lang{CHANGE} : $lang{ADD},&#10;    }&#10;  );&#10;}" shortcut="SPACE" description="webinterface template logic" toReformat="false" toShortenFQNames="true">
     <variable name="MODULE_NAME" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="entity_name" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="template_name" expression="" defaultValue="" alwaysStopAt="true" />
