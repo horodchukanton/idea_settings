@@ -1,14 +1,6 @@
 <application>
   <component name="WebServers">
     <option name="servers">
-      <webServer id="a061e9ad-e4f6-4dde-ae7d-e72647ee8b45" name="kodr" url="http://91.234.24.3:8888/">
-        <fileTransfer host="91.234.24.3" port="22" rootFolder="/home/kodr/kodr_iptv/" accessType="SFTP">
-          <advancedOptions>
-            <advancedOptions dataProtectionLevel="Private" />
-          </advancedOptions>
-          <option name="port" value="22" />
-        </fileTransfer>
-      </webServer>
       <webServer id="40817b0a-d9d9-4f05-b933-22a3681d6554" name="Debian Main" url="https://192.168.1.62/">
         <fileTransfer host="192.168.2.2" port="22" accessType="SFTP">
           <advancedOptions>
@@ -25,25 +17,9 @@
           <option name="port" value="22" />
         </fileTransfer>
       </webServer>
-      <webServer id="77278436-16d5-481a-b467-97ae1440867b" name="Debian Misc" url="http://192.168.0.65:8081/">
-        <fileTransfer host="192.168.0.65" port="22" privateKey="D:\Docs\Keys\id_dsa.anton" rootFolder="/var/www/html/store2" accessType="SFTP" keyPair="true">
-          <advancedOptions>
-            <advancedOptions dataProtectionLevel="Private" />
-          </advancedOptions>
-          <option name="port" value="22" />
-        </fileTransfer>
-      </webServer>
-      <webServer id="d728f636-b4ae-45a9-b3f8-3073ff9c57da" name="Debian Dancer" url="http://dosvid.org.ua">
-        <fileTransfer host="dosvid.org.ua" port="22" privateKey="C:\Users\Anykey\.ssh\id_rsa" rootFolder="/usr/Dosvid/" accessType="SFTP" keyPair="true">
-          <advancedOptions>
-            <advancedOptions dataProtectionLevel="Private" />
-          </advancedOptions>
-          <option name="port" value="22" />
-        </fileTransfer>
-      </webServer>
     </option>
   </component>
   <component name="webServersAuthStorage">
-    <data>AAABsLO5aa9c0g9U6PPhxKFDQNB3P/u4uw05d5OUYH4MthIV5VjV53b9WpT9rq9Dqu2j/fx3WM1fr1I528lsLGmvk2Vq1ptEMgcJOH+S7CxuP4Q1Qqf00ytMtp2ddeO3szSBWNsjDbAzvRKNVE94hNZXn0xzY888yMtTcG9k+LrHARc1OXrrJa6/eHWAgjliitY1P5yHU1wDI3/oq1OH8Ag1IvfXO0rGDe8ubS9uHVI78NBBf4zKUoCJEFb1nWSIvU/0Ig6VfpOEIMFnI2J6ONZEKJUt3dsCXHHcPh0s5amDRdjKm3BvC6BOh1WNAnNNgu5Z/hc5/tsdj2dSN1NGGA6iWLh3mGwODNiiyC/I7cDAHe9dh7YbxmZducXHy+SdS54G4pdfkB950PEEiUlcViy5L3Lol8tm8icIiCZi4Rr60wzeI3rxxSTYDIXt68l82pU5YpBHgnXGyXVgla5UdCWMRtzXTsYMy/ynwPsttXonwECZh7nhenkEkOEURq86mwGL09xpYzmHoY7QNw3OZNeQzxBR0ua38jvaa+mDD8Ia+Y4l0Bou5E96T49bexXYI3sJlDX09FXR0qmWEhSKLs+CQlg=</data>
+    <data>AAAA4DpnIVhCJqxvEwbeMe+A0S15d/r87pvWhNjJjXZJqRx66aus7QJGQdvMJtKDf+miqy5irWZad5BI5WoWFWDfhnVBLO4XTrguGNdRMlM6mG1cWHg/Rz7KO/521U/MHTBUSObS4wSd/YJ0Hki9M1+MEft0ENvyUfUSnlZdfk1J/PqRl6Gn7DG0b+PPZAaUSq9/QGeXOIUZQHbJyp3GWAj7HvZefSFGL+bHPlUY1u3P8KcLaxAcjV7VInSgNLd0orBzPEqyh6q3wQUJ598PjdSHHT13Coyzjwzk8jffCp73pqr/5vvtDcKUKWaZFuPgvE+kvg==</data>
   </component>
 </application>
