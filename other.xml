@@ -1,0 +1,45 @@
+<application>
+  <component name="AppInspectionProfilesVisibleTreeState">
+    <entry key="Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>BashSupport</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ErrorReportConfigurable">
+    <option name="ITN_LOGIN" value="" />
+    <option name="ITN_PASSWORD_CRYPT" value="" />
+    <option name="KEEP_ITN_PASSWORD" value="false" />
+    <option name="EMAIL" value="" />
+  </component>
+  <component name="RecentTaskRepositories">
+    <Redmine shared="false" url="http://abills.net.ua/r">
+      <option name="APIKey" value="88672776d37b0f28205ad8e51dbbbab2b12d1bf3" />
+      <option name="assignedToMe" value="true" />
+      <commitMessageFormat>#{id} {summary}</commitMessageFormat>
+      <option name="currentProject">
+        <RedmineProject id="-1" identifier="-- from all projects --" />
+      </option>
+      <password>dfdcdfc5dfc4dfdadfdfdfd9dfdedfcfdfcbdf9ddf99df8e</password>
+      <option name="loginAnonymously" value="false" />
+      <option name="preferredCloseTaskState" />
+      <option name="preferredOpenTaskState" />
+      <option name="shouldFormatCommitMessage" value="true" />
+      <option name="useHttpAuthentication" value="false" />
+      <option name="useProxy" value="false" />
+      <username>anton</username>
+    </Redmine>
+  </component>
+  <component name="RefactoringSettings">
+    <option name="RENAME_SEARCH_FOR_TEXT_FOR_PACKAGE" value="false" />
+  </component>
+</application>

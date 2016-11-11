@@ -1,0 +1,33 @@
+<application>
+  <component name="ProjectJdkTable">
+    <jdk version="2">
+      <name value="Perl v5.14.2 (MSWin32-x86-multi-thread)" />
+      <type value="Perl5 Interpreter" />
+      <version value="v5.14.2 (MSWin32-x86-multi-thread)" />
+      <homePath value="Z:/Dwimperl/perl/bin" />
+      <roots>
+        <annotationsPath>
+          <root type="composite" />
+        </annotationsPath>
+        <classPath>
+          <root type="composite">
+            <root type="simple" url="file://Z:/Dwimperl/perl/site/lib" />
+            <root type="simple" url="file://Z:/Dwimperl/perl/vendor/lib" />
+            <root type="simple" url="file://Z:/Dwimperl/perl/lib" />
+          </root>
+        </classPath>
+        <javadocPath>
+          <root type="composite" />
+        </javadocPath>
+        <sourcePath>
+          <root type="composite">
+            <root type="simple" url="file://Z:/Dwimperl/perl/site/lib" />
+            <root type="simple" url="file://Z:/Dwimperl/perl/vendor/lib" />
+            <root type="simple" url="file://Z:/Dwimperl/perl/lib" />
+          </root>
+        </sourcePath>
+      </roots>
+      <additional />
+    </jdk>
+  </component>
+</application>

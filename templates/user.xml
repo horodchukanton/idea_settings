@@ -1,0 +1,7 @@
+<templateSet group="user">
+  <template name="show_all_columns" value="if ($attr-&gt;{SHOW_ALL_COLUMNS}){&#10;  map { $attr-&gt;{$_-&gt;[0]} = '_SHOW' unless exists $attr-&gt;{$_-&gt;[0]} } @$search_columns;&#10;}" description="Maps all search fields with '_SHOW'" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PERL5" value="true" />
+    </context>
+  </template>
+</templateSet>

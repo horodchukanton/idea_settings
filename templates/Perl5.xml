@@ -1,0 +1,254 @@
+<templateSet group="Perl5">
+  <template name="if" value="if ($CONDITION$){&#10;    $END$&#10;}" description="if block" toReformat="true" toShortenFQNames="true">
+    <variable name="CONDITION" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PERL5_PREFIX" value="true" />
+    </context>
+  </template>
+  <template name="sub" value="#**********************************************************&#10;=head2 $NAME$($ARGUMENTS$)&#10;&#10;  Arguments:&#10;    $ARGUMENTS$ -&#10;    &#10;  Returns:&#10;  &#10;=cut&#10;#**********************************************************&#10;sub $NAME$ {&#10;  my ($ARGUMENTS$) = @_;&#10;  $END$&#10;}" description="new sub" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ARGUMENTS" expression="" defaultValue="$attr" alwaysStopAt="true" />
+    <context>
+      <option name="PERL5_PREFIX" value="true" />
+    </context>
+  </template>
+  <template name="foreach" value="foreach my $ELEMENT$ ($LIST$){&#10;    $END$&#10;}" description="foreach block" toReformat="true" toShortenFQNames="true">
+    <variable name="ELEMENT" expression="&quot;$element&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="LIST" expression="&quot;@list&quot;" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PERL5_PREFIX" value="true" />
+    </context>
+  </template>
+  <template name="do" value="do {&#10;    $END$&#10;} " description="do block" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PERL5_PREFIX" value="true" />
+    </context>
+  </template>
+  <template name="for" value="for(my $INIT$; $CONDITION$; $INCREMENT$){&#10;    $END$&#10;}" description="for block" toReformat="true" toShortenFQNames="true">
+    <variable name="INIT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CONDITION" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="INCREMENT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PERL5_PREFIX" value="true" />
+    </context>
+  </template>
+  <template name="else" value="&#10;else {&#10;    $END$&#10;}" description="else block" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PERL5_UNFINISHED_IF" value="true" />
+    </context>
+  </template>
+  <template name="elsif" value="&#10;elsif($CONDITION$){&#10;    $END$&#10;}" description="elsif block" toReformat="true" toShortenFQNames="true">
+    <variable name="CONDITION" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PERL5_UNFINISHED_IF" value="true" />
+    </context>
+  </template>
+  <template name="unless" value="unless ($EXPRESSION$){&#10;  $END$&#10;}" description="unless block" toReformat="true" toShortenFQNames="true">
+    <variable name="EXPRESSION" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PERL5_PREFIX" value="true" />
+    </context>
+  </template>
+  <template name="given" value="given ($EXPRESSION$){&#10;    $END$&#10;}" description="given block" toReformat="false" toShortenFQNames="true">
+    <variable name="EXPRESSION" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PERL5_PREFIX" value="true" />
+    </context>
+  </template>
+  <template name="while" value="while ($EXPR$) {&#10;    $END$&#10;}" description="while block" toReformat="true" toShortenFQNames="true">
+    <variable name="EXPR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PERL5_PREFIX" value="true" />
+    </context>
+  </template>
+  <template name="continue" value="continue{&#10;    $END$&#10;}" description="continue block" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PERL5" value="true" />
+    </context>
+  </template>
+  <template name="wrap with for" value="for (my $INIT$; $CONDITION$; $INCREMENT$){&#10;    $SELECTION$&#10;}" description="wrap in for block" toReformat="true" toShortenFQNames="true">
+    <variable name="INIT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CONDITION" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="INCREMENT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PERL5" value="true" />
+    </context>
+  </template>
+  <template name="until" value="until ($EXR$){&#10; $END$&#10;}" description="until block" toReformat="true" toShortenFQNames="true">
+    <variable name="EXR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PERL5_PREFIX" value="true" />
+    </context>
+  </template>
+  <template name="table" value="my $table = $html-&gt;table( { &#10;                            width      =&gt; '100%',&#10;                            caption    =&gt; _$OBJECT$,&#10;                            border     =&gt; 1,&#10;                            title      =&gt; [$COLUMN_TITLES$],&#10;                            cols_align =&gt; ['left', 'right', 'right', 'right', 'center', 'center' $END$],&#10;                            pages      =&gt; $OBJECT$-&gt;{TOTAL},&#10;                            qs         =&gt; $pages_qs,&#10;                            ID         =&gt; '$COMPANY$_ID'&#10;                          } );&#10;                          &#10;                          " description="ABills::HTML-&gt;table" toReformat="true" toShortenFQNames="true">
+    <variable name="COLUMN_TITLES" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="OBJECT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="COMPANY" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PERL5_PREFIX" value="true" />
+    </context>
+  </template>
+  <template name="bps" value="_bp(&quot;$DESCRIBE$&quot;, $VALUE$, { EXIT =&gt; 1 });" description="breakpoint stop" toReformat="false" toShortenFQNames="true">
+    <variable name="DESCRIBE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PERL5" value="true" />
+      <option name="PERL5_UNFINISHED_IF" value="false" />
+      <option name="PERL5_MASON" value="false" />
+      <option name="PERL5_INSIDE_SWITCH" value="false" />
+      <option name="PERL5_INSIDE_SWITCH_AFTER_CASE" value="false" />
+    </context>
+  </template>
+  <template name="sort" value="if ($hash$-&gt;{$key$}){&#10;  push @{ $hash$-&gt;{$key$} }, $value$; &#10;}&#10;else {&#10;  $hash$-&gt;{$key$} = [ $value$ ];&#10;}" description="push to array_ref inside hash_ref" toReformat="false" toShortenFQNames="true">
+    <variable name="hash" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="key" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="value" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PERL5" value="true" />
+    </context>
+  </template>
+  <template name="new" value="#**********************************************************&#10;=head2 new($db, $admin, $CONF)&#10;&#10;  Arguments:&#10;    $db    - ref to DB&#10;    $admin - current Web session admin&#10;    $CONF  - ref to %conf&#10;    &#10;  Returns:&#10;    object&#10;    &#10;=cut&#10;#**********************************************************&#10;sub new{&#10;  my $class = shift;&#10;&#10;  my ($db, $admin, $CONF) = @_;&#10;&#10;  my $self = {&#10;    db    =&gt; $db,&#10;    admin =&gt; $admin,&#10;    conf  =&gt; $CONF,&#10;  };&#10;&#10;  bless( $self, $class );&#10;&#10;  return $self;&#10;}&#10;&#10;%END%" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PERL5" value="true" />
+      <option name="PERL5_UNFINISHED_IF" value="false" />
+      <option name="PERL5_MASON" value="false" />
+      <option name="PERL5_INSIDE_SWITCH" value="false" />
+      <option name="PERL5_INSIDE_SWITCH_AFTER_CASE" value="false" />
+    </context>
+  </template>
+  <template name="myd" value="my $VAR0$ = (defined $VAR1$) ? $VAR1$ : $VAR2$;&#10;$END$" description="defined-or" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR2" expression="" defaultValue="''" alwaysStopAt="true" />
+    <context>
+      <option name="PERL5" value="true" />
+      <option name="PERL5_POSTFIX" value="false" />
+      <option name="PERL5_MASON" value="false" />
+    </context>
+  </template>
+  <template name="doc" value="#**********************************************************&#10;=head2 $NAME$($ARGUMENTS$)&#10;&#10;  Arguments:&#10;    $ARGUMENTS$ - hash_ref&#10;    &#10;  Returns:&#10;  &#10;=cut&#10;#**********************************************************" description="quick pod template" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ARGUMENTS" expression="" defaultValue="$attr" alwaysStopAt="true" />
+    <context>
+      <option name="PERL5" value="true" />
+    </context>
+  </template>
+  <template name="newa" value="#**********************************************************&#10;=head2 new($ARGS$) - constructor for $MODULE_NAME$&#10;  &#10;  Attributes:&#10;    $ARGS$ - &#10;    &#10;  Returns:&#10;    object - new $MODULE_NAME$ instance&#10;  &#10;=cut &#10;#**********************************************************&#10;sub new{&#10;  my $class = shift;&#10;  my ($ARGS$) = @_;&#10;  &#10;  my $self = {};&#10;  bless($self, $class);&#10;  &#10;  $self-&gt;{$END$} = '';&#10;    &#10;  return $self;&#10;}&#10;&#10;" description="Argued constructor" toReformat="false" toShortenFQNames="true">
+    <variable name="ARGS" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="MODULE_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PERL5" value="true" />
+      <option name="PERL5_POSTFIX" value="false" />
+      <option name="PERL5_UNFINISHED_IF" value="false" />
+      <option name="PERL5_MASON" value="false" />
+      <option name="PERL5_INSIDE_SWITCH" value="false" />
+      <option name="PERL5_INSIDE_SWITCH_AFTER_CASE" value="false" />
+    </context>
+  </template>
+  <template name="news" value="#**********************************************************&#10;=head2 new($ARGS$) - constructor for $MODULE_NAME$&#10;&#10;=cut &#10;#**********************************************************&#10;sub new{&#10;  my $class = shift;&#10;&#10;  my ($db, $admin, $CONF) = @_;&#10;&#10;  my $self = {&#10;    db    =&gt; $db,&#10;    admin =&gt; $admin,&#10;    conf  =&gt; $CONF,&#10;  };&#10;&#10;  bless( $self, $class );&#10;&#10;  return $self;&#10;}&#10;&#10;$END$" description="Simple constructor" toReformat="false" toShortenFQNames="true">
+    <variable name="ARGS" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="MODULE_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PERL5" value="true" />
+      <option name="PERL5_POSTFIX" value="false" />
+      <option name="PERL5_UNFINISHED_IF" value="false" />
+      <option name="PERL5_TEST_FILE" value="false" />
+      <option name="PERL5_MASON" value="false" />
+      <option name="PERL5_INSIDE_SWITCH" value="false" />
+      <option name="PERL5_INSIDE_SWITCH_AFTER_CASE" value="false" />
+    </context>
+  </template>
+  <template name="docs" value="#**********************************************************&#10;=head2 $NAME$($ARGUMENTS$)&#10;&#10;=cut&#10;#**********************************************************" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ARGUMENTS" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PERL5" value="true" />
+    </context>
+  </template>
+  <template name="load_pmodule" value="  my $RESULT$ = load_pmodule(&quot;$MODULE_CPAN$&quot;, { RETURN =&gt; 1 });&#10;  if ($RESULT$) {&#10;    print $RESULT$;&#10;    return 0;&#10;  }" description="Load perl module and show error if any" toReformat="false" toShortenFQNames="true">
+    <variable name="RESULT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="MODULE_CPAN" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PERL5" value="true" />
+      <option name="PERL5_POSTFIX" value="false" />
+      <option name="PERL5_MASON" value="false" />
+    </context>
+  </template>
+  <template name="crud" value="#**********************************************************&#10;=head2 $ENTITY_NAME$_list($attr)&#10;&#10;  Arguments:&#10;    $attr - hash_ref&#10;&#10;  Returns:&#10;    list&#10;&#10;=cut&#10;#**********************************************************&#10;sub $ENTITY_NAME$_list{&#10;  my $self = shift;&#10;  my ($attr) = @_;&#10;  &#10;  my $SORT = ($attr-&gt;{SORT}) ? $attr-&gt;{SORT} : 'id';&#10;  my $DESC = ($attr-&gt;{DESC}) ? '' : 'DESC';&#10;  my $PG = ($attr-&gt;{PG}) ? $attr-&gt;{PG} : 0;&#10;  my $PAGE_ROWS = ($attr-&gt;{PAGE_ROWS}) ? $attr-&gt;{PAGE_ROWS} : 25;&#10;  &#10;&#10;  my $search_columns = [&#10;    ['ID',             'INT',         'id'                           ,1 ],&#10;    ['NAME',           'STR',        'name'                         ,1 ],&#10;    ['$END$',          '',           ''                             ,1 ],&#10;  ];&#10;&#10;  if ($attr-&gt;{SHOW_ALL_COLUMNS}){&#10;    map { $attr-&gt;{$_-&gt;[0]} = '_SHOW' unless exists $attr-&gt;{$_-&gt;[0]} } @$search_columns;&#10;  }&#10;&#10;  my $WHERE =  $self-&gt;search_former($attr, $search_columns,&#10;    {&#10;      WHERE =&gt; 1&#10;    }&#10;  );&#10;  &#10;  $self-&gt;query2( &quot;SELECT $self-&gt;{SEARCH_FIELDS} id FROM $TABLE_NAME$ $WHERE ORDER BY $SORT $DESC LIMIT $PG, $PAGE_ROWS;&quot;, undef, {&#10;    COLS_NAME =&gt; 1,&#10;    COLS_UPPER =&gt; 1,&#10;    %{ $attr ? $attr : {}}}&#10;  );&#10;&#10;  return [] if $self-&gt;{errno};&#10;&#10;  &#10;  return $self-&gt;{list};&#10;}&#10;&#10;#**********************************************************&#10;=head2 $ENTITY_NAME$_info($id)&#10;&#10;  Arguments:&#10;    $id - id for $ENTITY_NAME$ &#10;&#10;  Returns:&#10;    hash_ref&#10;&#10;=cut&#10;#**********************************************************&#10;sub $ENTITY_NAME$_info{&#10;  my $self = shift;&#10;  my ($id) = @_;&#10;  &#10;  my $list = $self-&gt;$ENTITY_NAME$_list( { COLS_NAME =&gt; 1, ID =&gt; $id, SHOW_ALL_COLUMNS =&gt; 1, COLS_UPPER =&gt; 1 } );&#10;  &#10;  return $list-&gt;[0] || {};&#10;}&#10;&#10;#**********************************************************&#10;=head2 $ENTITY_NAME$_add($attr)&#10;&#10;  Arguments:&#10;    $attr - hash_ref&#10;&#10;  Returns:&#10;    1&#10;&#10;=cut&#10;#**********************************************************&#10;sub $ENTITY_NAME$_add{&#10;  my $self = shift;&#10;  my ($attr) = @_;&#10;  &#10;  $self-&gt;query_add('$TABLE_NAME$', $attr);&#10;  &#10;  return 1;&#10;}&#10;&#10;#**********************************************************&#10;=head2 $ENTITY_NAME$_del($attr)&#10;&#10;  Arguments:&#10;    $attr - hash_ref&#10;&#10;  Returns:&#10;   1&#10;&#10;=cut&#10;#**********************************************************&#10;sub $ENTITY_NAME$_del{&#10;  my $self = shift;&#10;  my ($attr) = @_;&#10;  &#10;  $self-&gt;query_del('$TABLE_NAME$', $attr);&#10;  &#10;  return 1;&#10;}&#10;&#10;#**********************************************************&#10;=head2 $ENTITY_NAME$_change($attr)&#10;&#10;  Arguments:&#10;    $attr - hash_ref&#10;&#10;  Returns:&#10;    1&#10;&#10;=cut&#10;#**********************************************************&#10;sub $ENTITY_NAME$_change{&#10;  my $self = shift;&#10;  my ($attr) = @_;&#10;  &#10;  $self-&gt;changes2({&#10;      CHANGE_PARAM =&gt; 'ID',&#10;      TABLE        =&gt; '$TABLE_NAME$',&#10;      DATA         =&gt; $attr,&#10;    });&#10;  &#10;  return 1;&#10;}" description="default operations with DB" toReformat="false" toShortenFQNames="true">
+    <variable name="ENTITY_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TABLE_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PERL5" value="true" />
+    </context>
+  </template>
+  <template name="subw" value="#**********************************************************&#10;=head2 $NAME$()&#10;&#10;=cut&#10;#**********************************************************&#10;sub $NAME$ {&#10;  $END$&#10;}" description="webnterface sub declaration" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PERL5" value="true" />
+    </context>
+  </template>
+  <template name="bp_d" value="  delete $OBJECT$-&gt;{admin};&#10;  delete $OBJECT$-&gt;{db};&#10;  delete $OBJECT$-&gt;{conf};&#10;  delete $OBJECT$-&gt;{COL_NAMES_ARR};&#10;&#10;  _bp('$OBJECT', $OBJECT$, { EXIT =&gt; $EXIT$ });&#10;  &#10;  $END$" description="show database row" toReformat="false" toShortenFQNames="true">
+    <variable name="OBJECT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="EXIT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PERL5" value="true" />
+      <option name="PERL5_UNFINISHED_IF" value="false" />
+      <option name="PERL5_MASON" value="false" />
+      <option name="PERL5_INSIDE_SWITCH" value="false" />
+      <option name="PERL5_INSIDE_SWITCH_AFTER_CASE" value="false" />
+    </context>
+  </template>
+  <template name="sort_h" value="my %$hash$ = ();&#10;foreach my $value$ (@$list$){&#10;  if ($hash${$key$}){&#10;    push @{ $hash${$key$} }, $value$;  &#10;  }&#10;  else {&#10;    $hash${$key$} = [ $value$ ];&#10;  }&#10;}" description="push to array_ref inside hash" toReformat="false" toShortenFQNames="true">
+    <variable name="hash" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="key" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="list" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="value" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PERL5" value="true" />
+    </context>
+  </template>
+  <template name="tpl" value="$html-&gt;tpl_show(_include('$MODULE_LOWER_CASE$_$TEMPLATE_NAME$', '$MODULE$'), &#10;  {&#10;    $END$&#10;  }&#10;);" description="Print template with variables" toReformat="true" toShortenFQNames="true">
+    <variable name="MODULE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="MODULE_LOWER_CASE" expression="lowercaseAndDash(String)" defaultValue="$MODULE$" alwaysStopAt="true" />
+    <variable name="TEMPLATE_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PERL5_PREFIX" value="true" />
+      <option name="PERL5_UNFINISHED_IF" value="true" />
+    </context>
+  </template>
+  <template name="caller" value="_bp(&quot;Called by&quot;, join(&quot;, &quot;, caller), {HEADER =&gt; 0, EXIT =&gt; 0, TO_CONSOLE =&gt; 0});" description="Show bp caller" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PERL5" value="true" />
+    </context>
+  </template>
+  <template name="_bp_a" value="_bp(&quot;$DESCRIBE$&quot;, $VALUE$, $BP_ATTR);" description="breakpoint with predefined argument" toReformat="false" toShortenFQNames="true">
+    <variable name="DESCRIBE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PERL5" value="true" />
+      <option name="PERL5_UNFINISHED_IF" value="false" />
+      <option name="PERL5_MASON" value="false" />
+      <option name="PERL5_INSIDE_SWITCH" value="false" />
+      <option name="PERL5_INSIDE_SWITCH_AFTER_CASE" value="false" />
+    </context>
+  </template>
+  <template name="subo" value="#**********************************************************&#10;=head2 $NAME$($ARGUMENTS$) - $DESCRIPTION$&#10;&#10;  Arguments:&#10;    $ARGUMENTS$ -&#10;    &#10;  Returns:&#10;    $RESULT$ - $RESULT_DESCRIPTIOIN$&#10;    &#10;=cut&#10;#**********************************************************&#10;sub $NAME$ {&#10;  my $self = shift;&#10;  my ($ARGUMENTS$) = @_;&#10;  &#10;  $END$&#10;  &#10;  return $RESULT$;&#10;}" description="new sub in object" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ARGUMENTS" expression="" defaultValue="$attr" alwaysStopAt="true" />
+    <variable name="DESCRIPTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="RESULT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="RESULT_DESCRIPTIOIN" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PERL5_PREFIX" value="true" />
+    </context>
+  </template>
+  <template name="crudw" value="  my %TEMPLATE_$ENTITY_NAME$ = ();&#10;  my $show_add_form = $FORM{add_form} || 0;&#10;&#10;  if ($FORM{add}) {&#10;    $MODULE_NAME$-&gt;$entity_name$_add({%FORM});&#10;    $show_add_form = !$misc-&gt;_show_result($MODULE_NAME$, $lang{ADDED});&#10;  }&#10;  elsif ($FORM{change}) {&#10;    $MODULE_NAME$-&gt;$entity_name$_change({%FORM});&#10;    $misc-&gt;_show_result($MODULE_NAME$, $lang{CHANGED});&#10;    $show_add_form = 1;&#10;  }&#10;  elsif ($FORM{chg}) {&#10;    my $tp_info = $MODULE_NAME$-&gt;$entity_name$_info($FORM{chg});&#10;    if (!_error_show($MODULE_NAME$)) {&#10;      %TEMPLATE_$ENTITY_NAME$ = %{$tp_info};&#10;      $show_add_form          = 1;&#10;    }&#10;  }&#10;  elsif ($FORM{del}) {&#10;    $MODULE_NAME$-&gt;$entity_name$_del({ ID =&gt; $FORM{del} });&#10;    $misc-&gt;_show_result($MODULE_NAME$, $lang{DELETED});&#10;  }&#10;&#10;  if ($show_add_form) {&#10;    $html-&gt;tpl_show(&#10;      _include('$template_name$', '$MODULE_NAME$'),&#10;      {&#10;        %TEMPLATE_$ENTITY_NAME$,&#10;        SUBMIT_BTN_ACTION =&gt; ($FORM{chg}) ? 'change' : 'add',&#10;        SUBMIT_BTN_NAME   =&gt; ($FORM{chg}) ? $lang{CHANGE} : $lang{ADD},&#10;      }&#10;    );&#10;  }" shortcut="SPACE" description="webinterface template logic" toReformat="false" toShortenFQNames="true">
+    <variable name="ENTITY_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="MODULE_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="entity_name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="template_name" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PERL5_PREFIX" value="true" />
+    </context>
+  </template>
+</templateSet>

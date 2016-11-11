@@ -1,0 +1,42 @@
+<application>
+  <component name="VimSettings">
+    <state version="4" enabled="false" />
+    <globalmarks />
+    <filemarks>
+      <file name="Z:/git/ABillS/language/english.pl" timestamp="1465567407655">
+        <mark key="[" line="604" column="20" />
+        <mark key="]" line="604" column="20" />
+        <mark key="." line="604" column="20" />
+        <mark key="^" line="604" column="20" />
+      </file>
+    </filemarks>
+    <jumps />
+    <registers>
+      <register name="1" type="4">
+        <text>NETWORK_NET</text>
+      </register>
+      <register name="&quot;" type="4">
+        <text>NETWORK_NET</text>
+      </register>
+      <register name="2" type="4">
+        <text>}=&quot;</text>
+      </register>
+      <register name="3" type="4">
+        <text>А</text>
+      </register>
+      <register name="-" type="4">
+        <text>NETWORK_NET</text>
+      </register>
+    </registers>
+    <search>
+      <last-dir>0</last-dir>
+      <show-last>false</show-last>
+    </search>
+    <history />
+    <shortcut-conflicts>
+      <shortcut-conflict owner="vim">
+        <text>ctrl pressed W</text>
+      </shortcut-conflict>
+    </shortcut-conflicts>
+  </component>
+</application>

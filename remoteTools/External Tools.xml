@@ -1,0 +1,21 @@
+<toolSet name="External Tools">
+  <tool name="run tests" description="Run tests" showInMainMenu="true" showInEditor="true" showInProject="true" showInSearchPopup="true" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="true" synchronizeAfterRun="false" CONNECTION_TYPE="DEPLOYMENT_SERVER" CONNECTION_ID="40817b0a-d9d9-4f05-b933-22a3681d6554">
+    <exec>
+      <option name="COMMAND" value="perl" />
+      <option name="PARAMETERS" value="/usr/abills/t/Tester.pm 2&gt;&amp;1" />
+      <option name="WORKING_DIRECTORY" value="/usr/abills/t/" />
+    </exec>
+    <filter>
+      <option name="NAME" value="Grep result" />
+      <option name="DESCRIPTION" value="Shows only test result" />
+      <option name="REGEXP" value="$FILE_PATH$ $LINE$ Result:" />
+    </filter>
+  </tool>
+  <tool name="fix chmod" showInMainMenu="true" showInEditor="true" showInProject="true" showInSearchPopup="true" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="true" synchronizeAfterRun="false" CONNECTION_TYPE="NONE">
+    <exec>
+      <option name="COMMAND" value="find /usr/abills/ | grep -e '\.cgi' | xargs chmod +x; find /usr/abills/ | grep -e '\.pl' | xargs chmod +x" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="/" />
+    </exec>
+  </tool>
+</toolSet>
