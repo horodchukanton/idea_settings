@@ -9,10 +9,8 @@
       <option name="PERL5" value="false" />
       <option name="Template Toolkit 2" value="false" />
       <option name="POD" value="false" />
-      <option name="Bash" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
       <option name="TypeScript" value="false" />
-      <option name="Handlebars" value="false" />
       <option name="SQL" value="false" />
       <option name="OTHER" value="true" />
     </context>
@@ -27,10 +25,8 @@
       <option name="PERL5" value="false" />
       <option name="Template Toolkit 2" value="false" />
       <option name="POD" value="false" />
-      <option name="Bash" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
       <option name="TypeScript" value="false" />
-      <option name="Handlebars" value="false" />
       <option name="SQL" value="false" />
       <option name="OTHER" value="true" />
     </context>
