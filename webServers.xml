@@ -17,6 +17,14 @@
           <option name="port" value="22" />
         </fileTransfer>
       </webServer>
+      <webServer id="6c585812-a225-4c4e-be41-968fff167eeb" name="abills.net.ua" url="http://91.234.24.4">
+        <fileTransfer host="91.234.24.4" port="22" privateKey="D:\Docs\Keys\id_rsa.ppk" accessType="SFTP" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
     </option>
   </component>
 </application>
