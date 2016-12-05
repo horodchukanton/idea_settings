@@ -20,6 +20,7 @@
       <mapping ext="conf" type="PLAIN_TEXT" />
       <mapping ext="php" type="PLAIN_TEXT" />
       <mapping ext="tpls" type="PLAIN_TEXT" />
+      <mapping ext="cfg" type="PLAIN_TEXT" />
       <mapping ext="eot" type="PLAIN_TEXT" />
       <mapping ext="55" type="PLAIN_TEXT" />
       <mapping ext="ini" type="PLAIN_TEXT" />
