@@ -25,6 +25,14 @@
           <option name="port" value="22" />
         </fileTransfer>
       </webServer>
+      <webServer id="77bc600e-b974-4b51-a637-144cea089f56" name="Debian Zoneminder" url="https://192.168.1.62/">
+        <fileTransfer host="192.168.1.101" port="22" privateKey="D:\Docs\Keys\id_rsa.ppk" accessType="SFTP" keyPair="true">
+          <advancedOptions>
+            <advancedOptions controlEncoding="UTF-8" dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
     </option>
   </component>
 </application>
