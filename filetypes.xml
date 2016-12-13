@@ -4,6 +4,7 @@
       <mapping ext="tt" type="HTML" />
       <mapping ext="tpl" type="HTML" />
       <mapping ext="snmp" type="JSON" />
+      <mapping pattern="7" type="PLAIN_TEXT" />
       <mapping pattern="temp" type="PLAIN_TEXT" />
       <mapping pattern="123" type="PLAIN_TEXT" />
       <mapping pattern="debian_7_x64" type="PLAIN_TEXT" />
