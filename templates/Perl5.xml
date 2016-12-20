@@ -249,4 +249,9 @@
       <option name="PERL5_PREFIX" value="true" />
     </context>
   </template>
+  <template name="begin" value="my $libpath;&#10;BEGIN {&#10;  use FindBin '$Bin';&#10;  # Assuming we are in '/usr/abills/misc/db_check/'&#10;  $libpath = $Bin . '../../';&#10;}&#10;use lib $libpath . 'lib';&#10;use lib $libpath . 'Abills/mysql/';&#10;&#10;our (%conf);&#10;require 'libexec/config.pl';" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PERL5" value="true" />
+    </context>
+  </template>
 </templateSet>
