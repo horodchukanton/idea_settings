@@ -9,8 +9,8 @@
           <option name="port" value="22" />
         </fileTransfer>
       </webServer>
-      <webServer id="59b22d27-efcb-4179-bde6-518885576270" name="FreeBSD 1" url="http://192.168.1.64">
-        <fileTransfer host="192.168.1.64" port="22" privateKey="D:\Docs\Keys\id_rsa" accessType="SFTP" keyPair="true">
+      <webServer id="59b22d27-efcb-4179-bde6-518885576270" name="FreeBSD 1" url="http://192.168.1.61">
+        <fileTransfer host="192.168.1.61" port="22" privateKey="D:\Docs\Keys\id_rsa" accessType="SFTP" keyPair="true">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" />
           </advancedOptions>
