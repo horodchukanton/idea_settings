@@ -18,6 +18,7 @@
       <mapping pattern="core" type="PLAIN_TEXT" />
       <mapping pattern="VERSION" type="PLAIN_TEXT" />
       <mapping pattern="programs" type="PLAIN_TEXT" />
+      <mapping ext="cur" type="PLAIN_TEXT" />
       <mapping ext="152501+0200" type="PLAIN_TEXT" />
       <mapping ext="tpls" type="PLAIN_TEXT" />
       <mapping ext="cfg" type="PLAIN_TEXT" />
