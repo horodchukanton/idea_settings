@@ -65,10 +65,10 @@
     <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="DESCRIBE" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="PERL5_MASON" value="false" />
+      <option name="PERL5_INSIDE_SWITCH" value="false" />
       <option name="PERL5_INSIDE_SWITCH_AFTER_CASE" value="false" />
       <option name="PERL5" value="true" />
-      <option name="PERL5_INSIDE_SWITCH" value="false" />
+      <option name="PERL5_MASON" value="false" />
       <option name="PERL5_UNFINISHED_IF" value="false" />
     </context>
   </template>
@@ -80,10 +80,10 @@
   </template>
   <template name="new" value="#**********************************************************&#10;=head2 new($db, $admin, $CONF)&#10;&#10;  Arguments:&#10;    $db    - ref to DB&#10;    $admin - current Web session admin&#10;    $CONF  - ref to %conf&#10;    &#10;  Returns:&#10;    object&#10;    &#10;=cut&#10;#**********************************************************&#10;sub new{&#10;  my $class = shift;&#10;&#10;  my ($db, $admin, $CONF) = @_;&#10;&#10;  my $self = {&#10;    db    =&gt; $db,&#10;    admin =&gt; $admin,&#10;    conf  =&gt; $CONF,&#10;  };&#10;&#10;  bless( $self, $class );&#10;&#10;  return $self;&#10;}&#10;&#10;$END$" toReformat="false" toShortenFQNames="true">
     <context>
-      <option name="PERL5_MASON" value="false" />
+      <option name="PERL5_INSIDE_SWITCH" value="false" />
       <option name="PERL5_INSIDE_SWITCH_AFTER_CASE" value="false" />
       <option name="PERL5" value="true" />
-      <option name="PERL5_INSIDE_SWITCH" value="false" />
+      <option name="PERL5_MASON" value="false" />
       <option name="PERL5_UNFINISHED_IF" value="false" />
     </context>
   </template>
@@ -160,10 +160,10 @@
     <variable name="OBJECT" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="EXIT" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="PERL5_MASON" value="false" />
+      <option name="PERL5_INSIDE_SWITCH" value="false" />
       <option name="PERL5_INSIDE_SWITCH_AFTER_CASE" value="false" />
       <option name="PERL5" value="true" />
-      <option name="PERL5_INSIDE_SWITCH" value="false" />
+      <option name="PERL5_MASON" value="false" />
       <option name="PERL5_UNFINISHED_IF" value="false" />
     </context>
   </template>
@@ -181,8 +181,8 @@
     <variable name="MODULE_LOWER_CASE" expression="lowercaseAndDash(String)" defaultValue="$MODULE$" alwaysStopAt="true" />
     <variable name="TEMPLATE_NAME" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="PERL5_UNFINISHED_IF" value="true" />
       <option name="PERL5_PREFIX" value="true" />
+      <option name="PERL5_UNFINISHED_IF" value="true" />
     </context>
   </template>
   <template name="_bpc" value="_bp(&quot;Called by&quot;, [ caller ], {HEADER =&gt; 0, EXIT =&gt; 0, TO_CONSOLE =&gt; 0});" description="Show bp caller" toReformat="false" toShortenFQNames="true">
@@ -194,10 +194,10 @@
     <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="DESCRIBE" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="PERL5_MASON" value="false" />
+      <option name="PERL5_INSIDE_SWITCH" value="false" />
       <option name="PERL5_INSIDE_SWITCH_AFTER_CASE" value="false" />
       <option name="PERL5" value="true" />
-      <option name="PERL5_INSIDE_SWITCH" value="false" />
+      <option name="PERL5_MASON" value="false" />
       <option name="PERL5_UNFINISHED_IF" value="false" />
     </context>
   </template>
