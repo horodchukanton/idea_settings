@@ -22,8 +22,9 @@
       <mapping ext="cur" type="PLAIN_TEXT" />
       <mapping ext="152501+0200" type="PLAIN_TEXT" />
       <mapping ext="tpls" type="PLAIN_TEXT" />
-      <mapping ext="cfg" type="PLAIN_TEXT" />
+      <mapping ext="mo" type="PLAIN_TEXT" />
       <mapping ext="eot" type="PLAIN_TEXT" />
+      <mapping ext="cfg" type="PLAIN_TEXT" />
       <mapping ext="55" type="PLAIN_TEXT" />
       <mapping ext="cache" type="PLAIN_TEXT" />
       <mapping ext="ini" type="PLAIN_TEXT" />
