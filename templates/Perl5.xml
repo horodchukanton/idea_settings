@@ -65,11 +65,11 @@
     <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="DESCRIBE" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="PERL5_INSIDE_SWITCH" value="false" />
+      <option name="PERL5_UNFINISHED_IF" value="false" />
       <option name="PERL5_INSIDE_SWITCH_AFTER_CASE" value="false" />
       <option name="PERL5" value="true" />
+      <option name="PERL5_INSIDE_SWITCH" value="false" />
       <option name="PERL5_MASON" value="false" />
-      <option name="PERL5_UNFINISHED_IF" value="false" />
     </context>
   </template>
   <template name="sort" value="if ($hash$-&gt;{$key$}){&#10;  push @{ $hash$-&gt;{$key$} }, $value$; &#10;}&#10;else {&#10;  $hash$-&gt;{$key$} = [ $value$ ];&#10;}" description="push to array_ref inside hash_ref" toReformat="false" toShortenFQNames="true">
@@ -80,11 +80,11 @@
   </template>
   <template name="new" value="#**********************************************************&#10;=head2 new($db, $admin, $CONF)&#10;&#10;  Arguments:&#10;    $db    - ref to DB&#10;    $admin - current Web session admin&#10;    $CONF  - ref to %conf&#10;    &#10;  Returns:&#10;    object&#10;    &#10;=cut&#10;#**********************************************************&#10;sub new{&#10;  my $class = shift;&#10;&#10;  my ($db, $admin, $CONF) = @_;&#10;&#10;  my $self = {&#10;    db    =&gt; $db,&#10;    admin =&gt; $admin,&#10;    conf  =&gt; $CONF,&#10;  };&#10;&#10;  bless( $self, $class );&#10;&#10;  return $self;&#10;}&#10;&#10;$END$" toReformat="false" toShortenFQNames="true">
     <context>
-      <option name="PERL5_INSIDE_SWITCH" value="false" />
+      <option name="PERL5_UNFINISHED_IF" value="false" />
       <option name="PERL5_INSIDE_SWITCH_AFTER_CASE" value="false" />
       <option name="PERL5" value="true" />
+      <option name="PERL5_INSIDE_SWITCH" value="false" />
       <option name="PERL5_MASON" value="false" />
-      <option name="PERL5_UNFINISHED_IF" value="false" />
     </context>
   </template>
   <template name="myd" value="my $VAR0$ = (defined $VAR1$) ? $VAR1$ : $VAR2$;&#10;$END$" description="defined-or" toReformat="false" toShortenFQNames="true">
@@ -160,11 +160,11 @@
     <variable name="OBJECT" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="EXIT" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="PERL5_INSIDE_SWITCH" value="false" />
+      <option name="PERL5_UNFINISHED_IF" value="false" />
       <option name="PERL5_INSIDE_SWITCH_AFTER_CASE" value="false" />
       <option name="PERL5" value="true" />
+      <option name="PERL5_INSIDE_SWITCH" value="false" />
       <option name="PERL5_MASON" value="false" />
-      <option name="PERL5_UNFINISHED_IF" value="false" />
     </context>
   </template>
   <template name="sort_h" value="my %$hash$ = ();&#10;foreach my $value$ (@$list$){&#10;  if ($hash${$key$}){&#10;    push @{ $hash${$key$} }, $value$;  &#10;  }&#10;  else {&#10;    $hash${$key$} = [ $value$ ];&#10;  }&#10;}" description="push to array_ref inside hash" toReformat="false" toShortenFQNames="true">
@@ -181,8 +181,8 @@
     <variable name="MODULE_LOWER_CASE" expression="lowercaseAndDash(String)" defaultValue="$MODULE$" alwaysStopAt="true" />
     <variable name="TEMPLATE_NAME" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="PERL5_PREFIX" value="true" />
       <option name="PERL5_UNFINISHED_IF" value="true" />
+      <option name="PERL5_PREFIX" value="true" />
     </context>
   </template>
   <template name="_bpc" value="_bp(&quot;Called by&quot;, [ caller ], {HEADER =&gt; 0, EXIT =&gt; 0, TO_CONSOLE =&gt; 0});" description="Show bp caller" toReformat="false" toShortenFQNames="true">
@@ -194,11 +194,11 @@
     <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="DESCRIBE" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="PERL5_INSIDE_SWITCH" value="false" />
+      <option name="PERL5_UNFINISHED_IF" value="false" />
       <option name="PERL5_INSIDE_SWITCH_AFTER_CASE" value="false" />
       <option name="PERL5" value="true" />
+      <option name="PERL5_INSIDE_SWITCH" value="false" />
       <option name="PERL5_MASON" value="false" />
-      <option name="PERL5_UNFINISHED_IF" value="false" />
     </context>
   </template>
   <template name="subo" value="#**********************************************************&#10;=head2 $NAME$($ARGUMENTS$) - $DESCRIPTION$&#10;&#10;  Arguments:&#10;    $ARGUMENTS$ -&#10;    &#10;  Returns:&#10;    $RESULT_DESCRIPTIOIN$&#10;    &#10;=cut&#10;#**********************************************************&#10;sub $NAME$ {&#10;  my $self = shift;&#10;  my ($ARGUMENTS$) = @_;&#10;  &#10;  $END$&#10;  &#10;  return $RESULT$;&#10;}" description="new sub in object" toReformat="true" toShortenFQNames="true">
