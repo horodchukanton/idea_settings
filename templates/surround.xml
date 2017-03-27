@@ -1,32 +1,32 @@
 <templateSet group="surround">
   <template name="B" value="{$SELECTION$}" description="Surround with {}" toReformat="true" toShortenFQNames="true" deactivated="true">
     <context>
-      <option name="TypeScript" value="false" />
-      <option name="JSP" value="false" />
+      <option name="CSS" value="false" />
       <option name="GROOVY" value="false" />
       <option name="GROOVY_STATEMENT" value="false" />
-      <option name="CSS" value="false" />
-      <option name="JSON" value="false" />
-      <option name="PERL5" value="false" />
-      <option name="Template Toolkit 2" value="false" />
-      <option name="SQL" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSON" value="false" />
+      <option name="JSP" value="false" />
+      <option name="PERL5" value="false" />
       <option name="POD" value="false" />
+      <option name="SQL" value="false" />
+      <option name="Template Toolkit 2" value="false" />
+      <option name="TypeScript" value="false" />
     </context>
   </template>
   <template name="P" value="($SELECTION$)" description="Surround with ()" toReformat="false" toShortenFQNames="true" deactivated="true">
     <context>
-      <option name="TypeScript" value="false" />
-      <option name="JSP" value="false" />
-      <option name="GROOVY" value="false" />
       <option name="CSS" value="false" />
-      <option name="JSON" value="false" />
-      <option name="PERL5" value="false" />
+      <option name="GROOVY" value="false" />
       <option name="GROOVY_EXPRESSION" value="false" />
-      <option name="Template Toolkit 2" value="false" />
-      <option name="SQL" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSON" value="false" />
+      <option name="JSP" value="false" />
+      <option name="PERL5" value="false" />
       <option name="POD" value="false" />
+      <option name="SQL" value="false" />
+      <option name="Template Toolkit 2" value="false" />
+      <option name="TypeScript" value="false" />
     </context>
   </template>
   <template name="C" value="java.util.concurrent.Callable&lt;$RET$&gt; callable = new java.util.concurrent.Callable&lt;$RET$&gt;() {&#10;  public $RET$ call() throws Exception {&#10;    $SELECTION$&#10;    $END$ &#10;  }&#10;};" description="Surround with Callable" toReformat="true" toShortenFQNames="true" deactivated="true">

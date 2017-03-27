@@ -11,8 +11,8 @@
   <template name="lst" value="$ARRAY$[$ARRAY$.length - 1]" description="Fetches last element of an array" toReformat="true" toShortenFQNames="true" deactivated="true">
     <variable name="ARRAY" expression="arrayVariable()" defaultValue="array" alwaysStopAt="true" />
     <context>
-      <option name="GROOVY_EXPRESSION" value="true" />
       <option name="GROOVY" value="false" />
+      <option name="GROOVY_EXPRESSION" value="true" />
     </context>
   </template>
   <template name="mn" value="$VAR$ = Math.min($VAR$, $END$);" description="Sets lesser value to a variable" toReformat="true" toShortenFQNames="true" deactivated="true">
