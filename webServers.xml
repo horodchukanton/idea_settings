@@ -1,7 +1,7 @@
 <application>
   <component name="WebServers">
     <option name="servers">
-      <webServer id="40817b0a-d9d9-4f05-b933-22a3681d6554" name="Debian Main" url="https://192.168.1.62/">
+      <webServer id="40817b0a-d9d9-4f05-b933-22a3681d6554" name="Debian Main" url="https://anykey.abills.net/">
         <fileTransfer host="192.168.2.2" port="22" privateKey="D:\Docs\Keys\id_rsa.ppk" accessType="SFTP" keyPair="true">
           <advancedOptions>
             <advancedOptions controlEncoding="UTF-8" dataProtectionLevel="Private" />
