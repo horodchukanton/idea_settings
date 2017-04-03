@@ -201,7 +201,7 @@
       <option name="PERL5_UNFINISHED_IF" value="false" />
     </context>
   </template>
-  <template name="subo" value="#**********************************************************&#10;=head2 $NAME$($ARGUMENTS$) - $DESCRIPTION$&#10;&#10;  Arguments:&#10;    $ARGUMENTS$ -&#10;    &#10;  Returns:&#10;    $RESULT_DESCRIPTIOIN$&#10;    &#10;=cut&#10;#**********************************************************&#10;sub $NAME$ {&#10;  my $self = shift;&#10;  my ($ARGUMENTS$) = @_;&#10;  &#10;  $END$&#10;  &#10;  return $RESULT$;&#10;}" description="new sub in object" toReformat="true" toShortenFQNames="true">
+  <template name="subo" value="#**********************************************************&#10;=head2 $NAME$($ARGUMENTS$) - $DESCRIPTION$&#10;&#10;  Arguments:&#10;    $ARGUMENTS$ -&#10;    &#10;  Returns:&#10;    $RESULT_DESCRIPTIOIN$&#10;    &#10;=cut&#10;#**********************************************************&#10;sub $NAME$ {&#10;  my ($self, $ARGUMENTS$) = @_;&#10;  &#10;  $END$&#10;  &#10;  return $RESULT$;&#10;}" description="new sub in object" toReformat="true" toShortenFQNames="true">
     <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="ARGUMENTS" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="DESCRIPTION" expression="" defaultValue="" alwaysStopAt="true" />
