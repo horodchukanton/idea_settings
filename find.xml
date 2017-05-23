@@ -12,13 +12,13 @@
       <mask>*.as</mask>
       <mask>*.mxml</mask>
       <mask>!*.tpl</mask>
-      <mask>*.tpl</mask>
       <mask>*.sql</mask>
       <mask>lng_.*.pl</mask>
       <mask>*.css</mask>
       <mask>*.js</mask>
       <mask>*.p</mask>
       <mask>*.pm</mask>
+      <mask>*.tpl</mask>
     </recentFileMasks>
   </component>
 </application>
