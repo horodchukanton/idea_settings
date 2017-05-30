@@ -231,4 +231,10 @@
       <option name="PERL5" value="true" />
     </context>
   </template>
+  <template name="require_mod" value="require $MODULE$;&#10;$MODULE$-&gt;import();&#10;my $$$MODULE$ = $MODULE$-&gt;new($db, $admin, \%conf);" description="run time module load" toReformat="false" toShortenFQNames="true">
+    <variable name="MODULE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PERL5" value="true" />
+    </context>
+  </template>
 </templateSet>
