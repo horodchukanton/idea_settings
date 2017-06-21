@@ -237,4 +237,13 @@
       <option name="PERL5" value="true" />
     </context>
   </template>
+  <template name="tpl_show" value="$html-&gt;tpl_show(_include('$MODULE_LOWER_CASE$_$TEMPLATE_NAME$', '$MODULE$'), &#10;  {&#10;    $END$&#10;  }&#10;);" description="Print template with variables ( alias )" toReformat="true" toShortenFQNames="true">
+    <variable name="MODULE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="MODULE_LOWER_CASE" expression="lowercaseAndDash(String)" defaultValue="$MODULE$" alwaysStopAt="true" />
+    <variable name="TEMPLATE_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PERL5_PREFIX" value="true" />
+      <option name="PERL5_UNFINISHED_IF" value="true" />
+    </context>
+  </template>
 </templateSet>
