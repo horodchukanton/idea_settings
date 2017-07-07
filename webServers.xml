@@ -1,6 +1,14 @@
 <application>
   <component name="WebServers">
     <option name="servers">
+      <webServer id="a6a6a074-53cb-4b9d-b34c-05ec1d13026d" name="HomeRasp" url="http://192.168.1.109">
+        <fileTransfer host="192.168.1.109" port="22" privateKey="D:\Docs\Keys\id_rsa.ppk" rootFolder="/usr/wifi_auth" accessType="SFTP" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
       <webServer id="40817b0a-d9d9-4f05-b933-22a3681d6554" name="Debian Main" url="https://anykey.abills.net:5000/">
         <fileTransfer host="192.168.2.2" port="22" privateKey="D:\Docs\Keys\id_rsa.ppk" accessType="SFTP" keyPair="true">
           <advancedOptions>
