@@ -33,6 +33,14 @@
           <option name="port" value="22" />
         </fileTransfer>
       </webServer>
+      <webServer id="f3a1d6c8-dc34-495c-98bf-463c39b988b6" name="OuterRasp" url="http://195.95.147.141">
+        <fileTransfer host="195.95.147.141" port="5022" privateKey="D:\Docs\Keys\id_rsa.ppk" rootFolder="/usr/wifi_auth" accessType="SFTP" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="5022" />
+        </fileTransfer>
+      </webServer>
     </option>
   </component>
 </application>
