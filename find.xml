@@ -5,7 +5,7 @@
     <option name="defaultScopeName" value="All Places" />
     <option name="CASE_SENSITIVE_SEARCH" value="true" />
     <option name="SEARCH_SCOPE" value="All Places" />
-    <option name="FILE_MASK" value="*.js" />
+    <option name="FILE_MASK" value="metatags*" />
     <recentFileMasks>
       <mask>*.properties</mask>
       <mask>*.html</mask>
@@ -23,6 +23,13 @@
       <mask>*.tpl</mask>
       <mask>*.</mask>
       <mask>*.js</mask>
+      <mask>me</mask>
+      <mask>meta</mask>
+      <mask>metat</mask>
+      <mask>metata</mask>
+      <mask>metatag</mask>
+      <mask>metatags</mask>
+      <mask>metatags*</mask>
     </recentFileMasks>
   </component>
 </application>
