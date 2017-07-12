@@ -247,4 +247,10 @@
       <option name="PERL5_UNFINISHED_IF" value="true" />
     </context>
   </template>
+  <template name="_error_show" value="_error_show($MODULE$) or return 0;" description="template for error_show (to forget not about it's inconvinient_logic)" toReformat="false" toShortenFQNames="true">
+    <variable name="MODULE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PERL5" value="true" />
+    </context>
+  </template>
 </templateSet>
