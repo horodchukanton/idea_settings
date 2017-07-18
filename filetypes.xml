@@ -22,13 +22,14 @@
       <mapping pattern="changes" type="PLAIN_TEXT" />
       <mapping pattern="programs" type="PLAIN_TEXT" />
       <mapping ext="cache" type="PLAIN_TEXT" />
-      <mapping ext="default" type="PLAIN_TEXT" />
+      <mapping ext="service" type="PLAIN_TEXT" />
       <mapping ext="conf" type="PLAIN_TEXT" />
       <mapping ext="152501+0200" type="PLAIN_TEXT" />
       <mapping ext="tpls" type="PLAIN_TEXT" />
       <mapping ext="mo" type="PLAIN_TEXT" />
       <mapping ext="file" type="PLAIN_TEXT" />
       <mapping ext="cfg" type="PLAIN_TEXT" />
+      <mapping ext="default" type="PLAIN_TEXT" />
       <mapping ext="eot" type="PLAIN_TEXT" />
       <mapping ext="php" type="PLAIN_TEXT" />
       <mapping ext="55" type="PLAIN_TEXT" />
