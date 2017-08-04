@@ -27,6 +27,9 @@
       <mask>metatag</mask>
       <mask>metatags</mask>
       <mask>metatags*</mask>
+      <mask>pl</mask>
+      <mask>.pl</mask>
+      <mask>*.pl</mask>
     </recentFileMasks>
   </component>
 </application>
