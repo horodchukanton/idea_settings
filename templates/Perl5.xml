@@ -134,8 +134,7 @@
       <option name="PERL5" value="true" />
     </context>
   </template>
-  <template name="load_pmodule" value="  my $RESULT$ = load_pmodule(&quot;$MODULE_CPAN$&quot;, { RETURN =&gt; 1 });&#10;  if ($RESULT$) {&#10;    print $RESULT$;&#10;    return 0;&#10;  }" description="Load perl module and show error if any" toReformat="false" toShortenFQNames="true">
-    <variable name="RESULT" expression="" defaultValue="" alwaysStopAt="true" />
+  <template name="load_pmodule" value=" if (my $module_load_error = load_pmodule2(&quot;$MODULE_CPAN$&quot;, { SHOW_RETURN =&gt; 1 })) {&#10;  print $module_load_error;&#10;  return 0;&#10; }" description="Load perl module and show error if any" toReformat="false" toShortenFQNames="true">
     <variable name="MODULE_CPAN" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="PERL5" value="true" />
