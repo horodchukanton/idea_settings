@@ -3,8 +3,8 @@
     <extensionMap>
       <mapping pattern="mikrotik_configure" type="Bash" />
       <mapping pattern="centos_7_x64" type="Bash" />
-      <mapping ext="tt" type="HTML" />
       <mapping ext="tpl" type="HTML" />
+      <mapping ext="tt" type="HTML" />
       <mapping ext="snmp" type="JSON" />
       <mapping pattern="coova_defaults" type="PLAIN_TEXT" />
       <mapping pattern=".keep" type="PLAIN_TEXT" />
@@ -15,6 +15,7 @@
       <mapping pattern="debian_7_x64" type="PLAIN_TEXT" />
       <mapping pattern="temp" type="PLAIN_TEXT" />
       <mapping pattern="7" type="PLAIN_TEXT" />
+      <mapping pattern="debian_8_x64" type="PLAIN_TEXT" />
       <mapping pattern="1" type="PLAIN_TEXT" />
       <mapping pattern="default" type="PLAIN_TEXT" />
       <mapping pattern="&amp;&amp;" type="PLAIN_TEXT" />
@@ -23,19 +24,19 @@
       <mapping pattern="rfid" type="PLAIN_TEXT" />
       <mapping pattern="core" type="PLAIN_TEXT" />
       <mapping pattern="freebsd_11_x64" type="PLAIN_TEXT" />
-      <mapping ext="cache" type="PLAIN_TEXT" />
-      <mapping ext="service" type="PLAIN_TEXT" />
-      <mapping ext="conf" type="PLAIN_TEXT" />
+      <mapping ext="file" type="PLAIN_TEXT" />
+      <mapping ext="default" type="PLAIN_TEXT" />
+      <mapping ext="cur" type="PLAIN_TEXT" />
       <mapping ext="152501+0200" type="PLAIN_TEXT" />
+      <mapping ext="conf" type="PLAIN_TEXT" />
+      <mapping ext="php" type="PLAIN_TEXT" />
+      <mapping ext="service" type="PLAIN_TEXT" />
       <mapping ext="tpls" type="PLAIN_TEXT" />
       <mapping ext="mo" type="PLAIN_TEXT" />
-      <mapping ext="file" type="PLAIN_TEXT" />
-      <mapping ext="cfg" type="PLAIN_TEXT" />
-      <mapping ext="default" type="PLAIN_TEXT" />
       <mapping ext="eot" type="PLAIN_TEXT" />
-      <mapping ext="php" type="PLAIN_TEXT" />
+      <mapping ext="cfg" type="PLAIN_TEXT" />
       <mapping ext="55" type="PLAIN_TEXT" />
-      <mapping ext="cur" type="PLAIN_TEXT" />
+      <mapping ext="cache" type="PLAIN_TEXT" />
       <mapping ext="ini" type="PLAIN_TEXT" />
       <mapping pattern="webinterface" type="Perl5 script" />
       <mapping pattern="config" type="Perl5 script" />
