@@ -15,4 +15,7 @@
     <pattern pattern="\bfixme\b.*" />
     <pattern icon="question" pattern="\bMAYBE\b.*" />
   </component>
+  <component name="XmlEditorOptions">
+    <option name="selectWholeCssIdentifierOnDoubleClick" value="false" />
+  </component>
 </application>
