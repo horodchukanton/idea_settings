@@ -2,7 +2,7 @@
   <component name="WebServers">
     <option name="servers">
       <webServer id="a6a6a074-53cb-4b9d-b34c-05ec1d13026d" name="HomeRasp" url="http://192.168.1.109">
-        <fileTransfer host="192.168.1.109" port="22" privateKey="D:\Docs\Keys\id_rsa.ppk" rootFolder="/usr/" accessType="SFTP" keyPair="true">
+        <fileTransfer host="192.168.1.109" port="22" privateKey="D:\Docs\Keys\id_rsa.ppk" accessType="SFTP" keyPair="true">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" />
           </advancedOptions>
