@@ -5,9 +5,9 @@
   </component>
   <component name="PerlInterpreters">
     <perl version="2">
-      <name value="Perl v5.24.1" />
+      <name value="Perl v5.24.2" />
       <type value="Perl5 Interpreter" />
-      <version value="v5.24.1 for MSWin32-x64-multi-thread" />
+      <version value="v5.24.2 for MSWin32-x64-multi-thread" />
       <homePath value="C:/Strawberry/perl/bin" />
       <roots>
         <annotationsPath>
