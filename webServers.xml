@@ -1,0 +1,46 @@
+<application>
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="a6a6a074-53cb-4b9d-b34c-05ec1d13026d" name="HomeRasp" url="http://192.168.1.109">
+        <fileTransfer host="192.168.1.109" port="22" privateKey="D:\Docs\Keys\id_rsa.ppk" accessType="SFTP" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+      <webServer id="40817b0a-d9d9-4f05-b933-22a3681d6554" name="Debian Main" url="https://anykey.abills.net:8022/">
+        <fileTransfer host="192.168.2.2" port="22" privateKey="D:\Docs\Keys\id_rsa.ppk" accessType="SFTP" keyPair="true">
+          <advancedOptions>
+            <advancedOptions controlEncoding="UTF-8" dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+      <webServer id="59b22d27-efcb-4179-bde6-518885576270" name="FreeBSD 1" url="http://192.168.1.122">
+        <fileTransfer host="192.168.1.122" port="22" privateKey="D:\Docs\Keys\id_rsa" accessType="SFTP" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+      <webServer id="77bc600e-b974-4b51-a637-144cea089f56" name="Debian Zoneminder" url="https://192.168.1.62/">
+        <fileTransfer host="192.168.1.101" port="22" privateKey="D:\Docs\Keys\id_rsa.ppk" accessType="SFTP" keyPair="true">
+          <advancedOptions>
+            <advancedOptions controlEncoding="UTF-8" dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+      <webServer id="f3a1d6c8-dc34-495c-98bf-463c39b988b6" name="OuterRasp" url="http://195.95.147.141">
+        <fileTransfer host="195.95.147.141" port="5022" privateKey="D:\Docs\Keys\id_rsa.ppk" rootFolder="/usr/wifi_auth" accessType="SFTP" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="5022" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</application>
