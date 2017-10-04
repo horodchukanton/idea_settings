@@ -3,18 +3,16 @@
     <option name="customScope" value="All Places" />
     <option name="defaultScopeName" value="All Places" />
     <option name="SEARCH_SCOPE" value="All Places" />
+    <option name="FILE_MASK" value="*.sql" />
     <recentFileMasks>
-      <mask>*.xml</mask>
       <mask>*.java</mask>
       <mask>*.as</mask>
       <mask>*.mxml</mask>
       <mask>!*.tpl</mask>
-      <mask>*.sql</mask>
       <mask>lng_.*.pl</mask>
       <mask>*.css</mask>
       <mask>*.pm</mask>
       <mask>*.tpl</mask>
-      <mask>*.js</mask>
       <mask>me</mask>
       <mask>meta</mask>
       <mask>metat</mask>
@@ -26,7 +24,6 @@
       <mask>.pl</mask>
       <mask>*.pl</mask>
       <mask>*.p</mask>
-      <mask>*.</mask>
       <mask>*.b</mask>
       <mask>*.ba</mask>
       <mask>*.bak</mask>
@@ -34,6 +31,10 @@
       <mask>!.</mask>
       <mask>!*.</mask>
       <mask>!*.js</mask>
+      <mask>*.js</mask>
+      <mask>*.</mask>
+      <mask>*.sq</mask>
+      <mask>*.sql</mask>
     </recentFileMasks>
   </component>
 </application>
