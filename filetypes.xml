@@ -25,6 +25,7 @@
       <mapping pattern="core" type="PLAIN_TEXT" />
       <mapping pattern="freebsd_11_x64" type="PLAIN_TEXT" />
       <mapping ext="cache" type="PLAIN_TEXT" />
+      <mapping ext="service" type="PLAIN_TEXT" />
       <mapping ext="152501+0200" type="PLAIN_TEXT" />
       <mapping ext="tpls" type="PLAIN_TEXT" />
       <mapping ext="mo" type="PLAIN_TEXT" />
@@ -33,8 +34,8 @@
       <mapping ext="default" type="PLAIN_TEXT" />
       <mapping ext="eot" type="PLAIN_TEXT" />
       <mapping ext="55" type="PLAIN_TEXT" />
+      <mapping ext="43" type="PLAIN_TEXT" />
       <mapping ext="cur" type="PLAIN_TEXT" />
-      <mapping ext="service" type="PLAIN_TEXT" />
       <mapping ext="ini" type="PLAIN_TEXT" />
       <mapping pattern="webinterface" type="Perl5 script" />
       <mapping pattern="config" type="Perl5 script" />
