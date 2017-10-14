@@ -15,6 +15,7 @@
       <mapping pattern="changes" type="PLAIN_TEXT" />
       <mapping pattern="debian_7_x64" type="PLAIN_TEXT" />
       <mapping pattern="temp" type="PLAIN_TEXT" />
+      <mapping pattern="dev" type="PLAIN_TEXT" />
       <mapping pattern="7" type="PLAIN_TEXT" />
       <mapping pattern="debian_8_x64" type="PLAIN_TEXT" />
       <mapping pattern="1" type="PLAIN_TEXT" />
