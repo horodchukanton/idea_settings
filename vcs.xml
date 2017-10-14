@@ -50,6 +50,10 @@
           <option name="url" value="https://github.com/dosvid/landing.git" />
           <option name="userName" value="" />
         </UrlAndUserName>
+        <UrlAndUserName>
+          <option name="url" value="http://github.com" />
+          <option name="userName" value="andrewkiko" />
+        </UrlAndUserName>
       </list>
     </option>
     <option name="cloneParentDir" value="Z:\git\" />
