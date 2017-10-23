@@ -252,4 +252,10 @@
       <option name="PERL5" value="true" />
     </context>
   </template>
+  <template name="BEGIN" value="BEGIN {&#10;  our $Bin;&#10;  use FindBin '$Bin';&#10;  &#10;  $libpath = $Bin . '/../'; #assuming we are in /usr/abills/$FILEPATH$&#10;  if ( $Bin =~ m/\/abills(\/)/ ) {&#10;    $libpath = substr($Bin, 0, $-[1]);&#10;  }&#10;  &#10;  unshift(@INC,&#10;    &quot;$libpath&quot;,&#10;    &quot;$libpath/Abills&quot;,&#10;    &quot;$libpath/lib&quot;,&#10;    &quot;$libpath/Abills/modules&quot;,&#10;    &quot;$libpath/Abills/mysql&quot;&#10;    $END$&#10;  );&#10;}&#10;&#10;die &quot;No \$libpath \n&quot; if ( !$libpath );&#10;&#10;our (%conf);&#10;require &quot;$libpath/libexec/config.pl&quot;;&#10;&#10;use Admins;&#10;require Abills::SQL;&#10;our Admins $admin;&#10;our Abills::SQL $db;&#10;$db = Abills::SQL-&gt;connect(@conf{'dbtype', 'dbhost', 'dbname', 'dbuser', 'dbpasswd'}, {&#10;    CHARSET =&gt; $conf{dbcharset},&#10;    SCOPE   =&gt; __FILE__ . __LINE__&#10;  });&#10;$admin = Admins-&gt;new($db, \%conf);&#10;$admin-&gt;info($conf{SYSTEM_ADMIN_ID}, { IP =&gt; '127.0.0.1' });" description="find and load $admin, $db, %conf" toReformat="false" toShortenFQNames="true">
+    <variable name="FILEPATH" expression="" defaultValue="misc/" alwaysStopAt="true" />
+    <context>
+      <option name="PERL5" value="true" />
+    </context>
+  </template>
 </templateSet>

@@ -5,7 +5,7 @@
       <option name="INDENT_SIZE" value="2" />
       <option name="CONTINUATION_INDENT_SIZE" value="2" />
       <option name="TAB_SIZE" value="2" />
-      <option name="USE_TAB_CHARACTER" value="false" />
+      <option name="USE_TAB_CHARACTER" value="true" />
       <option name="SMART_TABS" value="true" />
       <option name="LABEL_INDENT_SIZE" value="0" />
       <option name="LABEL_INDENT_ABSOLUTE" value="false" />
@@ -16,7 +16,7 @@
   <option name="LINE_SEPARATOR" value="&#10;" />
   <JSCodeStyleSettings>
     <option name="ALIGN_OBJECT_PROPERTIES" value="2" />
-    <option name="ALIGN_MULTIPLE_ASSIGNMENTS" value="true" />
+    <option name="ALIGN_VAR_STATEMENTS" value="2" />
     <option name="USE_DOUBLE_QUOTES" value="false" />
   </JSCodeStyleSettings>
   <JSON>
@@ -28,7 +28,6 @@
     <option name="OPTIONAL_DEREFERENCE_HASHREF_ELEMENT" value="2" />
     <option name="OPTIONAL_DEREFERENCE_SIMPLE" value="1" />
     <option name="OPTIONAL_PARENTHESES" value="1" />
-    <option name="SPACE_AROUND_CONCAT_OPERATOR" value="true" />
   </Perl5CodeStyleSettings>
   <SqlCodeStyleSettings>
     <option name="ALIGN_AS_IN_SELECT_STATEMENT" value="false" />

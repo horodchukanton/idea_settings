@@ -4,15 +4,6 @@
     <option name="defaultScopeName" value="All Places" />
     <option name="SEARCH_SCOPE" value="All Places" />
     <recentFileMasks>
-      <mask>*.java</mask>
-      <mask>*.as</mask>
-      <mask>*.mxml</mask>
-      <mask>!*.tpl</mask>
-      <mask>lng_.*.pl</mask>
-      <mask>*.css</mask>
-      <mask>*.pm</mask>
-      <mask>*.tpl</mask>
-      <mask>me</mask>
       <mask>meta</mask>
       <mask>metat</mask>
       <mask>metata</mask>
@@ -34,6 +25,15 @@
       <mask>*.</mask>
       <mask>*.sq</mask>
       <mask>*.sql</mask>
+      <mask>e</mask>
+      <mask>en</mask>
+      <mask>eng</mask>
+      <mask>engl</mask>
+      <mask>engli</mask>
+      <mask>englis</mask>
+      <mask>english</mask>
+      <mask>english.</mask>
+      <mask>english.*</mask>
     </recentFileMasks>
   </component>
 </application>
