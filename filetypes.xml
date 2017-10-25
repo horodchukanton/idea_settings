@@ -1,13 +1,12 @@
 <application>
   <component name="FileTypeManager" version="17">
     <extensionMap>
-      <mapping pattern="mikrotik_configure" type="Bash" />
-      <mapping pattern="centos_7_x64" type="Bash" />
-      <mapping ext="tt" type="HTML" />
       <mapping ext="tpl" type="HTML" />
+      <mapping ext="tt" type="HTML" />
       <mapping ext="snmp" type="JSON" />
       <mapping pattern="Makefile" type="PLAIN_TEXT" />
       <mapping pattern="coova_defaults" type="PLAIN_TEXT" />
+      <mapping pattern="README" type="PLAIN_TEXT" />
       <mapping pattern=".keep" type="PLAIN_TEXT" />
       <mapping pattern="VERSION" type="PLAIN_TEXT" />
       <mapping pattern="uwsgi_params" type="PLAIN_TEXT" />
@@ -28,21 +27,22 @@
       <mapping pattern="freebsd_11_x64" type="PLAIN_TEXT" />
       <mapping ext="cache" type="PLAIN_TEXT" />
       <mapping ext="152501+0200" type="PLAIN_TEXT" />
-      <mapping ext="tpls" type="PLAIN_TEXT" />
       <mapping ext="mo" type="PLAIN_TEXT" />
       <mapping ext="file" type="PLAIN_TEXT" />
-      <mapping ext="cfg" type="PLAIN_TEXT" />
       <mapping ext="default" type="PLAIN_TEXT" />
-      <mapping ext="eot" type="PLAIN_TEXT" />
-      <mapping ext="55" type="PLAIN_TEXT" />
-      <mapping ext="43" type="PLAIN_TEXT" />
       <mapping ext="cur" type="PLAIN_TEXT" />
       <mapping ext="service" type="PLAIN_TEXT" />
+      <mapping ext="tpls" type="PLAIN_TEXT" />
+      <mapping ext="eot" type="PLAIN_TEXT" />
+      <mapping ext="cfg" type="PLAIN_TEXT" />
+      <mapping ext="55" type="PLAIN_TEXT" />
+      <mapping ext="43" type="PLAIN_TEXT" />
       <mapping ext="ini" type="PLAIN_TEXT" />
       <mapping pattern="webinterface" type="Perl5 script" />
       <mapping pattern="config" type="Perl5 script" />
-      <removed_mapping ext="tpl" type="Smarty" />
       <removed_mapping ext="tt" type="Template Toolkit" />
+      <mapping pattern="centos_7_x64" type="Bash" />
+      <mapping pattern="mikrotik_configure" type="Bash" />
     </extensionMap>
   </component>
 </application>
