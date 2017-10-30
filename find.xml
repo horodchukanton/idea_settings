@@ -5,26 +5,12 @@
     <option name="localRegularExpressions" value="true" />
     <option name="LOCAL_REGULAR_EXPRESSIONS" value="true" />
     <option name="SEARCH_SCOPE" value="All Places" />
+    <option name="FILE_MASK" value="webinterface" />
     <recentFileMasks>
-      <mask>meta</mask>
-      <mask>metat</mask>
-      <mask>metata</mask>
-      <mask>metatag</mask>
-      <mask>metatags</mask>
-      <mask>metatags*</mask>
-      <mask>pl</mask>
-      <mask>.pl</mask>
-      <mask>*.pl</mask>
-      <mask>*.p</mask>
-      <mask>*.b</mask>
-      <mask>*.ba</mask>
-      <mask>*.bak</mask>
-      <mask>!</mask>
       <mask>!.</mask>
       <mask>!*.</mask>
       <mask>!*.js</mask>
       <mask>*.js</mask>
-      <mask>*.</mask>
       <mask>*.sq</mask>
       <mask>*.sql</mask>
       <mask>e</mask>
@@ -36,6 +22,21 @@
       <mask>english</mask>
       <mask>english.</mask>
       <mask>english.*</mask>
+      <mask>(</mask>
+      <mask>*.pm</mask>
+      <mask>*.pl</mask>
+      <mask>*.p</mask>
+      <mask>*.</mask>
+      <mask>*</mask>
+      <mask>we</mask>
+      <mask>web</mask>
+      <mask>webi</mask>
+      <mask>webin</mask>
+      <mask>webint</mask>
+      <mask>webinter</mask>
+      <mask>webinterfa</mask>
+      <mask>webinterfac</mask>
+      <mask>webinterface</mask>
     </recentFileMasks>
   </component>
 </application>
