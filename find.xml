@@ -3,10 +3,8 @@
     <option name="customScope" value="All Places" />
     <option name="defaultScopeName" value="All Places" />
     <option name="SEARCH_SCOPE" value="All Places" />
+    <option name="FILE_MASK" value="*.pl" />
     <recentFileMasks>
-      <mask>!.</mask>
-      <mask>!*.</mask>
-      <mask>!*.js</mask>
       <mask>*.js</mask>
       <mask>*.sq</mask>
       <mask>*.sql</mask>
@@ -21,10 +19,7 @@
       <mask>english.*</mask>
       <mask>(</mask>
       <mask>*.pm</mask>
-      <mask>*.pl</mask>
       <mask>*.p</mask>
-      <mask>*.</mask>
-      <mask>*</mask>
       <mask>we</mask>
       <mask>web</mask>
       <mask>webi</mask>
@@ -34,6 +29,12 @@
       <mask>webinterfa</mask>
       <mask>webinterfac</mask>
       <mask>webinterface</mask>
+      <mask>юзд</mask>
+      <mask>юз</mask>
+      <mask>ю</mask>
+      <mask>*</mask>
+      <mask>*.</mask>
+      <mask>*.pl</mask>
     </recentFileMasks>
   </component>
 </application>
