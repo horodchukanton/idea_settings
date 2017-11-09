@@ -3,10 +3,9 @@
     <option name="customScope" value="All Places" />
     <option name="defaultScopeName" value="All Places" />
     <option name="SEARCH_SCOPE" value="All Places" />
+    <option name="FILE_MASK" value="*.sql" />
     <recentFileMasks>
       <mask>*.js</mask>
-      <mask>*.sq</mask>
-      <mask>*.sql</mask>
       <mask>e</mask>
       <mask>en</mask>
       <mask>eng</mask>
@@ -34,6 +33,8 @@
       <mask>*</mask>
       <mask>*.</mask>
       <mask>*.pl</mask>
+      <mask>*.sq</mask>
+      <mask>*.sql</mask>
     </recentFileMasks>
   </component>
 </application>
