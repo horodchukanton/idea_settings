@@ -3,11 +3,8 @@
     <option name="customScope" value="All Places" />
     <option name="defaultScopeName" value="All Places" />
     <option name="SEARCH_SCOPE" value="All Places" />
-    <option name="FILE_MASK" value="*.pl" />
+    <option name="FILE_MASK" value="*.cgi" />
     <recentFileMasks>
-      <mask>*.js</mask>
-      <mask>e</mask>
-      <mask>en</mask>
       <mask>eng</mask>
       <mask>engl</mask>
       <mask>engli</mask>
@@ -16,7 +13,6 @@
       <mask>english.</mask>
       <mask>english.*</mask>
       <mask>(</mask>
-      <mask>*.pm</mask>
       <mask>*.p</mask>
       <mask>we</mask>
       <mask>web</mask>
@@ -31,10 +27,14 @@
       <mask>юз</mask>
       <mask>ю</mask>
       <mask>*</mask>
-      <mask>*.</mask>
       <mask>*.sq</mask>
       <mask>*.sql</mask>
       <mask>*.pl</mask>
+      <mask>*.pm</mask>
+      <mask>*.</mask>
+      <mask>*.c</mask>
+      <mask>*.cg</mask>
+      <mask>*.cgi</mask>
     </recentFileMasks>
   </component>
 </application>
