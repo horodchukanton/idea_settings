@@ -61,7 +61,7 @@
       <option name="PERL5_PREFIX" value="true" />
     </context>
   </template>
-  <template name="_bps" value="_bp(&quot;$DESCRIBE$&quot;, $VALUE$, { EXIT =&gt; 1 });" description="breakpoint stop" toReformat="false" toShortenFQNames="true">
+  <template name="_bps" value="use Abills::Base qw/_bp/;&#10;_bp(&quot;$DESCRIBE$&quot;, $VALUE$, { EXIT =&gt; 1 });" description="breakpoint stop" toReformat="false" toShortenFQNames="true">
     <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="DESCRIBE" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
@@ -155,7 +155,7 @@
       <option name="PERL5" value="true" />
     </context>
   </template>
-  <template name="_bpd" value="  delete $OBJECT$-&gt;{admin};&#10;  delete $OBJECT$-&gt;{db};&#10;  delete $OBJECT$-&gt;{conf};&#10;  delete $OBJECT$-&gt;{COL_NAMES_ARR};&#10;&#10;  _bp('$OBJECT', $OBJECT$, { EXIT =&gt; $EXIT$ });&#10;  &#10;  $END$" description="show database row" toReformat="false" toShortenFQNames="true">
+  <template name="_bpd" value="my $_copy = $OBJECT$; &#10;delete $_copy-&gt;{admin};&#10;delete $_copy-&gt;{db};&#10;delete $_copy-&gt;{conf};&#10;delete $_copy-&gt;{COL_NAMES_ARR};&#10;&#10;use Abills::Base qw/_bp/;&#10;_bp('$OBJECT', $_copy, { EXIT =&gt; $EXIT$, HEADER =&gt; 0 });&#10;&#10;$END$" description="show database row" toReformat="false" toShortenFQNames="true">
     <variable name="OBJECT" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="EXIT" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
@@ -184,20 +184,9 @@
       <option name="PERL5_UNFINISHED_IF" value="true" />
     </context>
   </template>
-  <template name="_bpc" value="_bp(&quot;Called by&quot;, [ caller ], {HEADER =&gt; 0, EXIT =&gt; 0, TO_CONSOLE =&gt; 0});" description="Show bp caller" toReformat="false" toShortenFQNames="true">
+  <template name="_bpc" value="use Abills::Base qw/_bp/;&#10;_bp(&quot;Called by&quot;, [ caller ], {HEADER =&gt; 0, EXIT =&gt; 0, TO_CONSOLE =&gt; 0});" description="Show bp caller" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="PERL5" value="true" />
-    </context>
-  </template>
-  <template name="_bpa" value="_bp(&quot;$DESCRIBE$&quot;, $VALUE$, $BP_ATTR);" description="breakpoint with predefined argument" toReformat="false" toShortenFQNames="true">
-    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="DESCRIBE" expression="" defaultValue="" alwaysStopAt="true" />
-    <context>
-      <option name="PERL5" value="true" />
-      <option name="PERL5_INSIDE_SWITCH" value="false" />
-      <option name="PERL5_INSIDE_SWITCH_AFTER_CASE" value="false" />
-      <option name="PERL5_MASON" value="false" />
-      <option name="PERL5_UNFINISHED_IF" value="false" />
     </context>
   </template>
   <template name="subo" value="#**********************************************************&#10;=head2 $NAME$($ARGUMENTS$) - $DESCRIPTION$&#10;&#10;  Arguments:&#10;    $ARGUMENTS$ -&#10;    &#10;  Returns:&#10;    $RESULT_DESCRIPTIOIN$&#10;    &#10;=cut&#10;#**********************************************************&#10;sub $NAME$ {&#10;  my ($self, $ARGUMENTS$) = @_;&#10;  &#10;  $END$&#10;  &#10;  return $RESULT$;&#10;}" description="new sub in object" toReformat="true" toShortenFQNames="true">
@@ -256,6 +245,17 @@
     <variable name="FILEPATH" expression="" defaultValue="misc/" alwaysStopAt="true" />
     <context>
       <option name="PERL5" value="true" />
+    </context>
+  </template>
+  <template name="_bp" value="use Abills::Base qw/_bp/;&#10;_bp(&quot;$DESCRIBE$&quot;, $VALUE$, { EXIT =&gt; 0, HEADER =&gt; 0, TO_CONSOLE =&gt; 0 });&#10;$END$" description="breakpoint stop" toReformat="false" toShortenFQNames="true">
+    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="DESCRIBE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PERL5" value="true" />
+      <option name="PERL5_INSIDE_SWITCH" value="false" />
+      <option name="PERL5_INSIDE_SWITCH_AFTER_CASE" value="false" />
+      <option name="PERL5_MASON" value="false" />
+      <option name="PERL5_UNFINISHED_IF" value="false" />
     </context>
   </template>
 </templateSet>

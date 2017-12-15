@@ -6,29 +6,6 @@
     <option name="LOCAL_REGULAR_EXPRESSIONS" value="true" />
     <option name="SEARCH_SCOPE" value="All Places" />
     <recentFileMasks>
-      <mask>meta</mask>
-      <mask>metat</mask>
-      <mask>metata</mask>
-      <mask>metatag</mask>
-      <mask>metatags</mask>
-      <mask>metatags*</mask>
-      <mask>pl</mask>
-      <mask>.pl</mask>
-      <mask>*.pl</mask>
-      <mask>*.p</mask>
-      <mask>*.b</mask>
-      <mask>*.ba</mask>
-      <mask>*.bak</mask>
-      <mask>!</mask>
-      <mask>!.</mask>
-      <mask>!*.</mask>
-      <mask>!*.js</mask>
-      <mask>*.js</mask>
-      <mask>*.</mask>
-      <mask>*.sq</mask>
-      <mask>*.sql</mask>
-      <mask>e</mask>
-      <mask>en</mask>
       <mask>eng</mask>
       <mask>engl</mask>
       <mask>engli</mask>
@@ -36,6 +13,29 @@
       <mask>english</mask>
       <mask>english.</mask>
       <mask>english.*</mask>
+      <mask>(</mask>
+      <mask>*.p</mask>
+      <mask>we</mask>
+      <mask>web</mask>
+      <mask>webi</mask>
+      <mask>webin</mask>
+      <mask>webint</mask>
+      <mask>webinter</mask>
+      <mask>webinterfa</mask>
+      <mask>webinterfac</mask>
+      <mask>webinterface</mask>
+      <mask>юзд</mask>
+      <mask>юз</mask>
+      <mask>ю</mask>
+      <mask>*</mask>
+      <mask>*.sq</mask>
+      <mask>*.sql</mask>
+      <mask>*.pl</mask>
+      <mask>*.pm</mask>
+      <mask>*.</mask>
+      <mask>*.c</mask>
+      <mask>*.cg</mask>
+      <mask>*.cgi</mask>
     </recentFileMasks>
   </component>
 </application>

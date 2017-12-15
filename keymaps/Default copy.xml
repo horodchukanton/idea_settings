@@ -5,6 +5,9 @@
   <action id="RemoteTool_External Tools_run tests">
     <keyboard-shortcut first-keystroke="ctrl alt back_space" />
   </action>
+  <action id="ReopenClosedTab">
+    <keyboard-shortcut first-keystroke="alt t" />
+  </action>
   <action id="SwitchApply">
     <keyboard-shortcut first-keystroke="shift alt enter" />
   </action>
