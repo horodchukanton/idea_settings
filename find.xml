@@ -27,13 +27,13 @@
       <mask>ю</mask>
       <mask>*</mask>
       <mask>*.sq</mask>
-      <mask>*.sql</mask>
       <mask>*.pl</mask>
       <mask>*.pm</mask>
       <mask>*.</mask>
       <mask>*.c</mask>
       <mask>*.cg</mask>
       <mask>*.cgi</mask>
+      <mask>*.sql</mask>
     </recentFileMasks>
   </component>
 </application>
