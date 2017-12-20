@@ -1,0 +1,9 @@
+<toolSet name="External Tools">
+  <tool name="copy_paid_modules" showInMainMenu="true" showInEditor="true" showInProject="true" showInSearchPopup="true" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="cp" />
+      <option name="PARAMETERS" value="-u z/git/ABillS/Abills/modules/Cablecat.pm z/git/ABillS/Abills/modules/Maps.pm z/git/ABillS/abills_mods/" />
+      <option name="WORKING_DIRECTORY" value="$ProjectFileDir$" />
+    </exec>
+  </tool>
+</toolSet>
