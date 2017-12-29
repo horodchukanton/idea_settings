@@ -3,7 +3,7 @@
     <exec>
       <option name="COMMAND" value="C:\MinGW\msys\1.0\bin\bash.exe" />
       <option name="PARAMETERS" value="/c/Users/Anykey/copy_paid_modules.sh" />
-      <option name="WORKING_DIRECTORY" value="$USER_HOME$" />
+      <option name="WORKING_DIRECTORY" value="C:/Users/Anykey" />
     </exec>
   </tool>
 </toolSet>
