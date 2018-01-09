@@ -1,0 +1,9 @@
+<toolSet name="External Tools">
+  <tool name="copy_paid_modules" showInMainMenu="true" showInEditor="true" showInProject="true" showInSearchPopup="true" disabled="false" useConsole="true" showConsoleOnStdOut="true" showConsoleOnStdErr="true" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="C:\MinGW\msys\1.0\bin\bash.exe" />
+      <option name="PARAMETERS" value="/c/Users/Anykey/copy_paid_modules.sh" />
+      <option name="WORKING_DIRECTORY" value="C:/Users/Anykey" />
+    </exec>
+  </tool>
+</toolSet>
