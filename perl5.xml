@@ -1,6 +1,6 @@
 <application>
   <component name="Perl5ApplicationSettings">
-    <option name="pluginVersion" value="2017.3.2" />
+    <option name="pluginVersion" value="2017.4.1" />
     <option name="popupShown" value="true" />
   </component>
   <component name="PerlInterpreters">
@@ -15,9 +15,9 @@
         </annotationsPath>
         <classPath>
           <root type="composite">
-            <root type="simple" url="file://C:/Strawberry/perl/site/lib" />
-            <root type="simple" url="file://C:/Strawberry/perl/vendor/lib" />
-            <root type="simple" url="file://C:/Strawberry/perl/lib" />
+            <root url="file://C:/Strawberry/perl/site/lib" type="simple" />
+            <root url="file://C:/Strawberry/perl/vendor/lib" type="simple" />
+            <root url="file://C:/Strawberry/perl/lib" type="simple" />
           </root>
         </classPath>
         <javadocPath>
