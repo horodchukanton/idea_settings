@@ -4,5 +4,6 @@
   </component>
   <component name="DaemonCodeAnalyzerSettings">
     <option name="AUTOREPARSE_DELAY" value="600" />
+    <option name="SHOW_METHOD_SEPARATORS" value="true" />
   </component>
 </application>
