@@ -3,9 +3,8 @@
     <option name="customScope" value="All Places" />
     <option name="defaultScopeName" value="All Places" />
     <option name="SEARCH_SCOPE" value="All Places" />
-    <option name="FILE_MASK" value="*.sql" />
+    <option name="FILE_MASK" value="english*" />
     <recentFileMasks>
-      <mask>engl</mask>
       <mask>engli</mask>
       <mask>englis</mask>
       <mask>english</mask>
@@ -35,6 +34,7 @@
       <mask>*.cgi</mask>
       <mask>index.cgi</mask>
       <mask>*.sql</mask>
+      <mask>english*</mask>
     </recentFileMasks>
   </component>
 </application>
