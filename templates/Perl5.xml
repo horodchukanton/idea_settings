@@ -244,4 +244,9 @@
       <option name="PERL5_UNFINISHED_IF" value="false" />
     </context>
   </template>
+  <template name="BEG" value="BEGIN {&#10;  use FindBin $Bin;&#10;  $libpath = substr($Bin, 0, $-[1]) if ( $Bin =~ m/\/abills(\/)/ );&#10;  die &quot; Should be inside /usr/abills dir \n&quot; unless $libpath;&#10;  unshift (@INC, &quot;$libpath/lib&quot;);&#10;}&#10;use Abills::Init qw/$db $admin %conf $END$/;&#10;" description="begin fast" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PERL5" value="true" />
+    </context>
+  </template>
 </templateSet>
