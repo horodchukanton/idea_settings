@@ -11,18 +11,19 @@
       <mapping pattern="README" type="PLAIN_TEXT" />
       <mapping pattern=".keep" type="PLAIN_TEXT" />
       <mapping pattern="VERSION" type="PLAIN_TEXT" />
+      <mapping pattern="cpanfile" type="PLAIN_TEXT" />
       <mapping pattern="uwsgi_params" type="PLAIN_TEXT" />
       <mapping pattern="programs" type="PLAIN_TEXT" />
+      <mapping pattern="changes" type="PLAIN_TEXT" />
       <mapping pattern="debian_7_x64" type="PLAIN_TEXT" />
       <mapping pattern="temp" type="PLAIN_TEXT" />
-      <mapping pattern="external_adduser" type="PLAIN_TEXT" />
       <mapping pattern="dev" type="PLAIN_TEXT" />
       <mapping pattern="7" type="PLAIN_TEXT" />
       <mapping pattern="debian_8_x64" type="PLAIN_TEXT" />
       <mapping pattern="1" type="PLAIN_TEXT" />
       <mapping pattern="default" type="PLAIN_TEXT" />
       <mapping pattern="&amp;&amp;" type="PLAIN_TEXT" />
-      <mapping pattern="changes" type="PLAIN_TEXT" />
+      <mapping pattern="external_adduser" type="PLAIN_TEXT" />
       <mapping pattern="123" type="PLAIN_TEXT" />
       <mapping pattern="rfid" type="PLAIN_TEXT" />
       <mapping pattern="core" type="PLAIN_TEXT" />
