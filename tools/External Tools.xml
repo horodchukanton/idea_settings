@@ -6,4 +6,11 @@
       <option name="WORKING_DIRECTORY" value="C:/Users/Anykey" />
     </exec>
   </tool>
+  <tool name="StartVM" showInMainMenu="true" showInEditor="false" showInProject="false" showInSearchPopup="true" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="true" synchronizeAfterRun="false">
+    <exec>
+      <option name="COMMAND" value="C:\Program Files\Oracle\VirtualBox\VBoxManage.exe" />
+      <option name="PARAMETERS" value="startvm &quot;ABillS Debian9&quot; --type headless" />
+      <option name="WORKING_DIRECTORY" value="C:/Program Files/Oracle/VirtualBox" />
+    </exec>
+  </tool>
 </toolSet>
