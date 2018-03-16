@@ -3,6 +3,7 @@
     <option name="customScope" value="All Places" />
     <option name="defaultScopeName" value="All Places" />
     <option name="SEARCH_SCOPE" value="All Places" />
+    <option name="FILE_MASK" value="*.pl" />
     <recentFileMasks>
       <mask>engli</mask>
       <mask>englis</mask>
@@ -25,7 +26,6 @@
       <mask>ю</mask>
       <mask>*</mask>
       <mask>*.sq</mask>
-      <mask>*.pl</mask>
       <mask>*.pm</mask>
       <mask>*.</mask>
       <mask>*.c</mask>
@@ -34,6 +34,7 @@
       <mask>index.cgi</mask>
       <mask>*.sql</mask>
       <mask>*.css</mask>
+      <mask>*.pl</mask>
     </recentFileMasks>
   </component>
 </application>
