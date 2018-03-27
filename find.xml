@@ -4,7 +4,6 @@
     <option name="defaultScopeName" value="All Places" />
     <option name="SEARCH_SCOPE" value="All Places" />
     <recentFileMasks>
-      <mask>engli</mask>
       <mask>englis</mask>
       <mask>english</mask>
       <mask>english.</mask>
@@ -34,6 +33,7 @@
       <mask>*.sql</mask>
       <mask>*.css</mask>
       <mask>*.pl</mask>
+      <mask>*.js</mask>
     </recentFileMasks>
   </component>
 </application>
