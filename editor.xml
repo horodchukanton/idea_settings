@@ -1,22 +1,7 @@
 <application>
-  <component name="EditorSettings">
-    <option name="USE_SOFT_WRAPS" value="MAIN_EDITOR" />
-    <option name="IS_WHITESPACES_SHOWN" value="true" />
-    <option name="IS_LEADING_WHITESPACES_SHOWN" value="false" />
-    <option name="IS_INNER_WHITESPACES_SHOWN" value="false" />
-    <option name="IS_CAMEL_WORDS" value="true" />
-    <option name="IS_WHEEL_FONTCHANGE_ENABLED" value="true" />
-    <option name="KEEP_TRAILING_SPACE_ON_CARET_LINE" value="false" />
-  </component>
-  <component name="SqlEditorOptions">
-    <option name="qualificationType" value="On collisions" />
-  </component>
   <component name="TodoConfiguration">
     <pattern pattern="\btodo\b.*" />
     <pattern pattern="\bfixme\b.*" />
     <pattern icon="question" pattern="\bMAYBE\b.*" />
-  </component>
-  <component name="XmlEditorOptions">
-    <option name="selectWholeCssIdentifierOnDoubleClick" value="false" />
   </component>
 </application>
